@@ -1900,3 +1900,974 @@ nav a.active {
     }
 
 }
+/* =====================================================
+   KALASARA - MONITORING PAGE
+===================================================== */
+
+
+/* ================= ACTIVE NAV ================= */
+
+nav a.active {
+
+    color: #53e8c5;
+
+    border-bottom: 2px solid #53e8c5;
+
+    padding-bottom: 6px;
+
+}
+
+
+/* ================= MONITOR HERO ================= */
+
+.monitor-hero {
+
+    min-height: 560px;
+
+    padding: 150px 7% 80px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    overflow: hidden;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(0,30,24,.96),
+            rgba(0,50,42,.65),
+            rgba(0,20,15,.25)
+        ),
+
+        url("../images/monitoring.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.monitor-hero-content {
+
+    max-width: 650px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.monitor-label {
+
+    color: #53e8c5;
+
+    font-size: 12px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.monitor-hero h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(50px,6vw,78px);
+
+    line-height: .98;
+
+    margin-bottom: 18px;
+
+}
+
+
+.monitor-hero h1 span {
+
+    display: block;
+
+    color: #53e8c5;
+
+    font-style: italic;
+
+}
+
+
+.monitor-hero h3 {
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.monitor-hero-content > p:last-child {
+
+    max-width: 550px;
+
+    color: #d0e0da;
+
+    font-size: 17px;
+
+}
+
+
+.monitor-hero-message {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 250px;
+
+    text-align: center;
+
+    color: white;
+
+    font-family: Georgia, serif;
+
+    font-style: italic;
+
+    font-size: 25px;
+
+    line-height: 1.2;
+
+}
+
+
+.monitor-hero-message span {
+
+    display: block;
+
+}
+
+
+.heart {
+
+    font-size: 45px;
+
+    color: #53e8c5;
+
+    margin-top: 10px;
+
+}
+
+
+/* ================= DASHBOARD ================= */
+
+.monitor-dashboard {
+
+    padding: 60px 7% 100px;
+
+    background: #f3f0df;
+
+    color: #123a31;
+
+}
+
+
+/* ================= TABS ================= */
+
+.monitor-tabs {
+
+    max-width: 700px;
+
+    margin: 0 auto 35px;
+
+    padding: 5px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background: #ffffff;
+
+    border-radius: 35px;
+
+    border: 1px solid #dbe2d3;
+
+}
+
+
+.monitor-tab {
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: transparent;
+
+    color: #49625a;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+}
+
+
+.monitor-tab small {
+
+    font-size: 11px;
+
+}
+
+
+.monitor-tab.active {
+
+    background: #08745e;
+
+    color: white;
+
+}
+
+
+/* ================= VIEWS ================= */
+
+.monitor-view {
+
+    display: none;
+
+    max-width: 1150px;
+
+    margin: auto;
+
+}
+
+
+.monitor-view.active-view {
+
+    display: grid;
+
+}
+
+
+/* ================= SIMPLE VIEW ================= */
+
+.monitor-view#simpleView {
+
+    grid-template-columns: 1.5fr .6fr;
+
+    gap: 20px;
+
+}
+
+
+.quality-card {
+
+    background: white;
+
+    border-radius: 22px;
+
+    padding: 35px;
+
+    border: 1px solid #dce4d7;
+
+}
+
+
+.quality-heading h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 28px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.quality-heading p {
+
+    color: #6b7e76;
+
+    font-size: 13px;
+
+}
+
+
+.legend-safe {
+
+    color: #08745e;
+
+}
+
+
+.legend-warning {
+
+    color: #d99b20;
+
+}
+
+
+.legend-danger {
+
+    color: #c54242;
+
+}
+
+
+.quality-main {
+
+    min-height: 330px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 45px;
+
+}
+
+
+.quality-circle {
+
+    width: 230px;
+
+    height: 230px;
+
+    border-radius: 50%;
+
+    border: 7px solid #14966f;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+.water-drop {
+
+    font-size: 45px;
+
+}
+
+
+.quality-circle h2 {
+
+    color: #08745e;
+
+    font-size: 24px;
+
+    margin-top: 5px;
+
+}
+
+
+.quality-circle p {
+
+    color: #5c7169;
+
+}
+
+
+.quality-message {
+
+    max-width: 200px;
+
+}
+
+
+.speech {
+
+    padding: 20px;
+
+    border: 1px solid #b8d7c6;
+
+    border-radius: 35px;
+
+    color: #226050;
+
+    font-size: 16px;
+
+    text-align: center;
+
+}
+
+
+.quality-bottom {
+
+    text-align: center;
+
+    color: #647970;
+
+    font-size: 13px;
+
+}
+
+
+/* ================= SYSTEM STATUS ================= */
+
+.summary-card {
+
+    padding: 35px;
+
+    background: #064a3d;
+
+    border-radius: 22px;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+
+.summary-icon {
+
+    width: 60px;
+
+    height: 60px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background: #53e8c5;
+
+    color: #064a3d;
+
+    font-size: 28px;
+
+}
+
+
+.summary-card h3 {
+
+    font-size: 22px;
+
+}
+
+
+.summary-card p {
+
+    color: #cce3db;
+
+}
+
+
+.status-online {
+
+    margin-top: 20px;
+
+    color: #53e8c5;
+
+    font-weight: 900;
+
+}
+
+
+/* ================= DETAIL VIEW ================= */
+
+.monitor-view#detailView {
+
+    display: none;
+
+}
+
+
+.monitor-view#detailView.active-view {
+
+    display: block;
+
+}
+
+
+.detail-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    margin-bottom: 25px;
+
+}
+
+
+.detail-header h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 34px;
+
+}
+
+
+.last-updated {
+
+    color: #6d8179;
+
+    font-size: 12px;
+
+}
+
+
+.last-updated strong {
+
+    display: block;
+
+    color: #08745e;
+
+    margin-top: 4px;
+
+}
+
+
+/* ================= PARAMETER LIST ================= */
+
+.parameter-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+
+.monitor-parameter {
+
+    min-height: 85px;
+
+    padding: 15px 20px;
+
+    display: grid;
+
+    grid-template-columns:
+        60px 1fr 180px 100px;
+
+    align-items: center;
+
+    gap: 15px;
+
+    background: white;
+
+    border: 1px solid #dce4d7;
+
+    border-radius: 15px;
+
+    transition: .3s;
+
+}
+
+
+.monitor-parameter:hover {
+
+    transform: translateX(5px);
+
+    box-shadow:
+        0 8px 25px rgba(0,50,40,.08);
+
+}
+
+
+.parameter-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e8f0df;
+
+    font-size: 21px;
+
+}
+
+
+.parameter-name strong {
+
+    display: block;
+
+    font-size: 17px;
+
+}
+
+
+.parameter-name small {
+
+    color: #82928c;
+
+    font-size: 12px;
+
+}
+
+
+.parameter-value {
+
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 7px;
+
+}
+
+
+.parameter-value strong {
+
+    font-size: 22px;
+
+}
+
+
+.parameter-value small {
+
+    color: #7c8d86;
+
+}
+
+
+.parameter-status {
+
+    padding: 6px 12px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+}
+
+
+.parameter-status.safe {
+
+    background: #d9f2df;
+
+    color: #08745e;
+
+}
+
+
+.parameter-status.warning {
+
+    background: #fff0c9;
+
+    color: #a66a00;
+
+}
+
+
+.parameter-status.danger {
+
+    background: #f9d8d8;
+
+    color: #a63232;
+
+}
+
+
+/* ================= SENSOR FLOW ================= */
+
+.sensor-flow {
+
+    padding: 110px 7%;
+
+    background: #061a16;
+
+    color: white;
+
+}
+
+
+.sensor-flow-heading {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    text-align: center;
+
+}
+
+
+.sensor-flow-heading h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 50px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.sensor-flow-heading p:last-child {
+
+    color: #91aaa3;
+
+}
+
+
+.sensor-flow-line {
+
+    max-width: 1000px;
+
+    margin: 55px auto 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+}
+
+
+.sensor-flow-line div {
+
+    padding: 20px;
+
+    background: #0d2923;
+
+    border: 1px solid #28584e;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+}
+
+
+.sensor-flow-line div span {
+
+    display: block;
+
+    color: #53e8c5;
+
+    margin-bottom: 5px;
+
+    font-size: 11px;
+
+}
+
+
+.sensor-flow-line > span {
+
+    color: #53e8c5;
+
+    font-size: 22px;
+
+}
+
+
+/* ================= NOTE ================= */
+
+.monitor-note {
+
+    padding: 45px 7%;
+
+    background: #edf1e5;
+
+    color: #294d45;
+
+    text-align: center;
+
+}
+
+
+.monitor-note h3 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.monitor-note p {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    color: #61736d;
+
+    font-size: 13px;
+
+}
+
+
+/* ================= MONITOR MOBILE ================= */
+
+@media(max-width:900px) {
+
+    .monitor-hero {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 50px;
+
+    }
+
+
+    .monitor-hero-message {
+
+        text-align: left;
+
+    }
+
+
+    .monitor-view#simpleView {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .parameter-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+
+    .monitor-parameter {
+
+        grid-template-columns:
+            55px 1fr;
+
+    }
+
+
+    .parameter-value,
+    .parameter-status {
+
+        grid-column: 2;
+
+    }
+
+}
+
+
+@media(max-width:600px) {
+
+    .monitor-hero {
+
+        padding-left: 5%;
+
+        padding-right: 5%;
+
+    }
+
+
+    .monitor-dashboard {
+
+        padding-left: 5%;
+
+        padding-right: 5%;
+
+    }
+
+
+    .monitor-tabs {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .quality-main {
+
+        flex-direction: column;
+
+        gap: 25px;
+
+    }
+
+
+    .quality-circle {
+
+        width: 200px;
+
+        height: 200px;
+
+    }
+
+
+    .detail-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+    }
+
+
+    .sensor-flow {
+
+        padding-left: 5%;
+
+        padding-right: 5%;
+
+    }
+
+
+    .sensor-flow-line > span {
+
+        transform: rotate(90deg);
+
+    }
+
+}

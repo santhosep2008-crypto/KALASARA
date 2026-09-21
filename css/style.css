@@ -2915,3 +2915,88 @@ nav a.active {
     font-size: 10px;
     line-height: 1.2;
 }
+/* =========================================
+   FIXED FLOATING ORDER BUTTON
+========================================= */
+
+.floating-order-btn {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    width: 92px;
+    height: 92px;
+
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+    background: #123f38;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 4px;
+
+    cursor: pointer;
+
+    z-index: 9999;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.30);
+
+    transition: all 0.3s ease;
+}
+
+/* Cart icon */
+
+.floating-order-btn .cart-icon {
+    font-size: 21px;
+    line-height: 1;
+}
+
+/* Text */
+
+.floating-order-btn .order-text {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    line-height: 1.25;
+    text-align: center;
+}
+
+/* Hover */
+
+.floating-order-btn:hover {
+    transform: scale(1.08);
+    background: #1b6658;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Click */
+
+.floating-order-btn:active {
+    transform: scale(0.96);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .floating-order-btn {
+        width: 72px;
+        height: 72px;
+
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .floating-order-btn .cart-icon {
+        font-size: 17px;
+    }
+
+    .floating-order-btn .order-text {
+        font-size: 8px;
+    }
+}

@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Real-Time Water Monitoring | KALASARA</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVIGATION ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        KALASARA
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="how-it-works.html">
+            Need & Impact
+        </a>
+
+        <a href="dashboard.html" class="active">
+            Monitoring
+        </a>
+
+        <a href="team.html">
+            Team & Achievements
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= MONITORING HERO ================= -->
+
+<section class="monitor-hero">
+
+    <div class="monitor-hero-content">
+
+        <p class="monitor-label">
+            KALASARA • SMART MONITORING
+        </p>
+
+        <h1>
+            Real-Time Water
+            <span>Monitoring</span>
+        </h1>
+
+        <h3>
+            Simple. Clear. Easy to Understand.
+        </h3>
+
+        <p>
+
+            Check water quality through live sensor
+            readings. KALASARA monitors important
+            parameters to help evaluate treated water
+            quality.
+
+        </p>
+
+    </div>
+
+
+    <div class="monitor-hero-message">
+
+        <span>
+            Clean water
+        </span>
+
+        <span>
+            in your hands
+        </span>
+
+        <span>
+            literally!
+        </span>
+
+        <div class="heart">
+            ♡
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= MONITORING CONTROLS ================= -->
+
+<section class="monitor-dashboard">
+
+
+    <div class="monitor-tabs">
+
+        <button
+            class="monitor-tab active"
+            onclick="showView('simpleView')">
+
+            ◉ &nbsp; Live Monitoring
+            <small>(Simple View)</small>
+
+        </button>
+
+
+        <button
+            class="monitor-tab"
+            onclick="showView('detailView')">
+
+            ╱╲ &nbsp; Detailed Parameters
+
+        </button>
+
+    </div>
+
+
+
+    <!-- ================= SIMPLE VIEW ================= -->
+
+    <div id="simpleView"
+         class="monitor-view active-view">
+
+
+        <div class="quality-card">
+
+            <div class="quality-heading">
+
+                <h2>
+                    Water Quality at a Glance
+                </h2>
+
+                <p>
+                    <span class="legend-safe">
+                        Green = Safe
+                    </span>
+
+                    &nbsp;|&nbsp;
+
+                    <span class="legend-warning">
+                        Yellow = Caution
+                    </span>
+
+                    &nbsp;|&nbsp;
+
+                    <span class="legend-danger">
+                        Red = Unsafe
+                    </span>
+                </p>
+
+            </div>
+
+
+            <div class="quality-main">
+
+
+                <div class="quality-circle">
+
+                    <div class="water-drop">
+                        💧
+                    </div>
+
+                    <h2 id="overallStatus">
+                        GOOD
+                    </h2>
+
+                    <p>
+                        Quality
+                    </p>
+
+                </div>
+
+
+                <div class="quality-message">
+
+                    <div class="speech">
+
+                        <strong>
+                            Your water is
+                        </strong>
+
+                        <br>
+
+                        clean and safe
+                        to use!
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <p class="quality-bottom">
+
+                All monitored parameters are
+                currently within the displayed
+                reference limits.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- SUMMARY -->
+
+        <div class="summary-card">
+
+            <div class="summary-icon">
+                ✓
+            </div>
+
+            <h3>
+                System Status
+            </h3>
+
+            <p>
+                Monitoring Active
+            </p>
+
+            <div class="status-online">
+                ● ONLINE
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- ================= DETAILED VIEW ================= -->
+
+    <div id="detailView"
+         class="monitor-view">
+
+
+        <div class="detail-header">
+
+            <div>
+
+                <p class="monitor-label">
+                    LIVE SENSOR DATA
+                </p>
+
+                <h2>
+                    Detailed Parameters
+                </h2>
+
+            </div>
+
+
+            <div class="last-updated">
+
+                Last Updated
+
+                <strong id="lastUpdated">
+                    Just now
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="parameter-list">
+
+
+            <!-- PH -->
+
+            <div class="monitor-parameter">
+
+                <div class="parameter-icon">
+                    💧
+                </div>
+
+                <div class="parameter-name">
+
+                    <strong>
+                        pH
+                    </strong>
+
+                    <small>
+                        Acidity / Alkalinity
+                    </small>
+
+                </div>
+
+                <div class="parameter-value">
+
+                    <strong id="phValue">
+                        7.2
+                    </strong>
+
+                    <small>
+                        6.5 – 8.5
+                    </small>
+
+                </div>
+
+                <div
+                    class="parameter-status safe"
+                    id="phStatus">
+
+                    Normal
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TDS -->
+
+            <div class="monitor-parameter">
+
+                <div class="parameter-icon">
+                    💧
+                </div>
+
+                <div class="parameter-name">
+
+                    <strong>
+                        TDS
+                    </strong>
+
+                    <small>
+                        Total Dissolved Solids
+                    </small>
+
+                </div>
+
+                <div class="parameter-value">
+
+                    <strong id="tdsValue">
+                        85
+                    </strong>
+
+                    <small>
+                        mg/L &nbsp; (≤ 500)
+                    </small>
+
+                </div>
+
+                <div
+                    class="parameter-status safe"
+                    id="tdsStatus">
+
+                    Normal
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TSS -->
+
+            <div class="monitor-parameter">
+
+                <div class="parameter-icon">
+                    ✺
+                </div>
+
+                <div class="parameter-name">
+
+                    <strong>
+                        TSS
+                    </strong>
+
+                    <small>
+                        Total Suspended Solids
+                    </small>
+
+                </div>
+
+                <div class="parameter-value">
+
+                    <strong id="tssValue">
+                        12
+                    </strong>
+
+                    <small>
+                        mg/L &nbsp; (≤ 50)
+                    </small>
+
+                </div>
+
+                <div
+                    class="parameter-status safe"
+                    id="tssStatus">
+
+                    Normal
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TURBIDITY -->
+
+            <div class="monitor-parameter">
+
+                <div class="parameter-icon">
+                    ◢
+                </div>
+
+                <div class="parameter-name">
+
+                    <strong>
+                        Turbidity
+                    </strong>
+
+                    <small>
+                        Water Clarity
+                    </small>
+
+                </div>
+
+                <div class="parameter-value">
+
+                    <strong id="turbidityValue">
+                        1.8
+                    </strong>
+
+                    <small>
+                        NTU &nbsp; (≤ 5)
+                    </small>
+
+                </div>
+
+                <div
+                    class="parameter-status safe"
+                    id="turbidityStatus">
+
+                    Normal
+
+                </div>
+
+            </div>
+
+
+
+            <!-- HARDNESS -->
+
+            <div class="monitor-parameter">
+
+                <div class="parameter-icon">
+                    ♧
+                </div>
+
+                <div class="parameter-name">
+
+                    <strong>
+                        Hardness
+                    </strong>
+
+                    <small>
+                        Total Hardness
+                    </small>
+
+                </div>
+
+                <div class="parameter-value">
+
+                    <strong id="hardnessValue">
+                        68
+                    </strong>
+
+                    <small>
+                        mg/L &nbsp; (≤ 200)
+                    </small>
+
+                </div>
+
+                <div
+                    class="parameter-status safe"
+                    id="hardnessStatus">
+
+                    Normal
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TEMPERATURE -->
+
+            <div class="monitor-parameter">
+
+                <div class="parameter-icon">
+                    ♨
+                </div>
+
+                <div class="parameter-name">
+
+                    <strong>
+                        Temperature
+                    </strong>
+
+                    <small>
+                        Water Temperature
+                    </small>
+
+                </div>
+
+                <div class="parameter-value">
+
+                    <strong id="temperatureValue">
+                        22
+                    </strong>
+
+                    <small>
+                        °C &nbsp; (10 – 40)
+                    </small>
+
+                </div>
+
+                <div
+                    class="parameter-status safe"
+                    id="temperatureStatus">
+
+                    Normal
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= DATA FLOW ================= -->
+
+<section class="sensor-flow">
+
+    <div class="sensor-flow-heading">
+
+        <p class="monitor-label">
+            KALASARA DATA FLOW
+        </p>
+
+        <h2>
+            From Sensor to Dashboard
+        </h2>
+
+        <p>
+            Water-quality measurements can be collected
+            from sensors, processed by the controller and
+            transmitted to the monitoring interface.
+        </p>
+
+    </div>
+
+
+    <div class="sensor-flow-line">
+
+        <div>
+            <span>01</span>
+            WATER
+            SENSORS
+        </div>
+
+        <span>→</span>
+
+        <div>
+            <span>02</span>
+            ESP32 /
+            CONTROLLER
+        </div>
+
+        <span>→</span>
+
+        <div>
+            <span>03</span>
+            FIREBASE
+        </div>
+
+        <span>→</span>
+
+        <div>
+            <span>04</span>
+            KALASARA
+            DASHBOARD
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= DISCLAIMER ================= -->
+
+<section class="monitor-note">
+
+    <h3>
+        Monitoring Information
+    </h3>
+
+    <p>
+
+        The values displayed on this prototype interface
+        are sample demonstration readings. They should be
+        replaced with validated sensor measurements during
+        actual prototype operation.
+
+    </p>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        KALASARA
+    </div>
+
+    <p>
+        Smart Water Purification for Challenging Environments
+    </p>
+
+
+    <div class="footer-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="how-it-works.html">
+            Need & Impact
+        </a>
+
+        <a href="dashboard.html">
+            Monitoring
+        </a>
+
+        <a href="team.html">
+            Team
+        </a>
+
+    </div>
+
+
+    <p class="copyright">
+        © 2026 KALASARA
+    </p>
+
+</footer>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+
+/* ==========================================
+   SWITCH BETWEEN SIMPLE AND DETAILED VIEW
+========================================== */
+
+function showView(viewId) {
+
+    const views =
+        document.querySelectorAll(".monitor-view");
+
+    const tabs =
+        document.querySelectorAll(".monitor-tab");
+
+
+    views.forEach(function(view) {
+
+        view.classList.remove("active-view");
+
+    });
+
+
+    tabs.forEach(function(tab) {
+
+        tab.classList.remove("active");
+
+    });
+
+
+    document
+        .getElementById(viewId)
+        .classList.add("active-view");
+
+
+    event.currentTarget
+        .classList.add("active");
+
+}
+
+
+
+/* ==========================================
+   UPDATE TIME
+========================================== */
+
+function updateTime() {
+
+    const now = new Date();
+
+    document
+        .getElementById("lastUpdated")
+        .textContent =
+        now.toLocaleTimeString();
+
+}
+
+
+updateTime();
+
+
+
+/* ==========================================
+   DEMO SENSOR REFRESH
+========================================== */
+
+/*
+   These are demonstration values.
+
+   Later we can replace this section with
+   Firebase values coming from your ESP32.
+*/
+
+
+function updateDemoValues() {
+
+    const ph =
+        (7.1 + Math.random() * 0.2).toFixed(1);
+
+    const tds =
+        Math.floor(80 + Math.random() * 15);
+
+    const tss =
+        Math.floor(10 + Math.random() * 8);
+
+    const turbidity =
+        (1.5 + Math.random() * 0.8).toFixed(1);
+
+    const temperature =
+        Math.floor(21 + Math.random() * 4);
+
+
+    document
+        .getElementById("phValue")
+        .textContent = ph;
+
+
+    document
+        .getElementById("tdsValue")
+        .textContent = tds;
+
+
+    document
+        .getElementById("tssValue")
+        .textContent = tss;
+
+
+    document
+        .getElementById("turbidityValue")
+        .textContent =
+        turbidity;
+
+
+    document
+        .getElementById("temperatureValue")
+        .textContent =
+        temperature;
+
+
+    updateTime();
+
+}
+
+
+/*
+   Refresh demonstration values every
+   10 seconds.
+*/
+
+setInterval(
+    updateDemoValues,
+    10000
+);
+
+
+</script>
+
+
+</body>
+
+</html>

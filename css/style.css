@@ -2985,3 +2985,96 @@ nav a.active {
         font-size: 8px;
     }
 }
+/* =========================================
+   KALASARA FLOATING ORDER BUTTON
+   Click / Touch → Contact Page
+========================================= */
+
+.floating-order-btn {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+
+    background: #123f38;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border: 2px solid #d8e4d4;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.30);
+
+    z-index: 99999;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease,
+                background 0.3s ease;
+}
+
+/* Cart icon */
+
+.floating-cart {
+    font-size: 21px;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+/* Button text */
+
+.floating-text {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    line-height: 1.25;
+    color: #ffffff;
+}
+
+/* Mouse hover */
+
+.floating-order-btn:hover {
+    transform: scale(1.08);
+    background: #1b6658;
+}
+
+/* Touch / click */
+
+.floating-order-btn:active {
+    transform: scale(0.95);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .floating-order-btn {
+        width: 72px;
+        height: 72px;
+
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .floating-cart {
+        font-size: 17px;
+    }
+
+    .floating-text {
+        font-size: 8px;
+    }
+}

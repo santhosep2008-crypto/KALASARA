@@ -3078,3 +3078,16 @@ nav a.active {
         font-size: 8px;
     }
 }
+.cad-image-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #ffffff;
+}
+
+.cad-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}

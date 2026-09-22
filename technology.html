@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Technology | KALASARA</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        /* =========================================
+           TECHNOLOGY PAGE
+        ========================================= */
+
+        .technology-page {
+            background: #f5f0df;
+            color: #173f38;
+        }
+
+
+        /* =========================================
+           TECHNOLOGY HERO
+        ========================================= */
+
+        .technology-hero {
+
+            min-height: 430px;
+
+            display: flex;
+            align-items: center;
+
+            padding: 80px 8%;
+
+            position: relative;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    rgba(5, 45, 39, 0.72),
+                    rgba(5, 45, 39, 0.72)
+                ),
+                url("images/technology-cad.png")
+                center / cover;
+        }
+
+
+        .technology-hero-content {
+
+            max-width: 650px;
+
+        }
+
+
+        .technology-tag {
+
+            font-size: 13px;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 15px;
+
+            color: #cfe3cf;
+
+        }
+
+
+        .technology-hero h1 {
+
+            font-family: Georgia, serif;
+
+            font-size: 58px;
+
+            line-height: 1.05;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .technology-hero p {
+
+            max-width: 570px;
+
+            font-size: 18px;
+
+            line-height: 1.7;
+
+            color: #e6eee8;
+
+        }
+
+
+        /* =========================================
+           CAD SECTION
+        ========================================= */
+
+        .cad-section {
+
+            padding: 80px 7%;
+
+        }
+
+
+        .section-title {
+
+            text-align: center;
+
+            max-width: 750px;
+
+            margin: 0 auto 45px;
+
+        }
+
+
+        .section-title h2 {
+
+            font-family: Georgia, serif;
+
+            font-size: 40px;
+
+            color: #123f38;
+
+            margin-bottom: 12px;
+
+        }
+
+
+        .section-title p {
+
+            color: #65716a;
+
+            line-height: 1.7;
+
+        }
+
+
+        .cad-container {
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            background: #ffffff;
+
+            border-radius: 28px;
+
+            padding: 25px;
+
+            box-shadow:
+                0 15px 45px rgba(30, 62, 51, 0.12);
+
+            border: 1px solid #ded8c5;
+
+        }
+
+
+        .cad-image {
+
+            width: 100%;
+
+            display: block;
+
+            border-radius: 20px;
+
+        }
+
+
+        .cad-caption {
+
+            text-align: center;
+
+            padding: 20px 10px 5px;
+
+            color: #68736c;
+
+            font-size: 14px;
+
+        }
+
+
+        /* =========================================
+           TECHNOLOGY INTRO
+        ========================================= */
+
+        .technology-intro {
+
+            padding: 30px 7% 80px;
+
+        }
+
+
+        .technology-grid {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 25px;
+
+        }
+
+
+        .technology-card {
+
+            background: #f9f6ea;
+
+            border: 1px solid #ddd7c4;
+
+            border-radius: 22px;
+
+            padding: 30px;
+
+            transition: 0.3s;
+
+        }
+
+
+        .technology-card:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 12px 30px rgba(26, 68, 56, 0.10);
+
+        }
+
+
+        .technology-icon {
+
+            width: 52px;
+
+            height: 52px;
+
+            border-radius: 50%;
+
+            background: #dce9d9;
+
+            color: #176153;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 23px;
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .technology-card h3 {
+
+            font-family: Georgia, serif;
+
+            font-size: 24px;
+
+            color: #17483f;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .technology-card p {
+
+            color: #66716a;
+
+            line-height: 1.7;
+
+        }
+
+
+        /* =========================================
+           SYSTEM FLOW
+        ========================================= */
+
+        .flow-section {
+
+            padding: 80px 7%;
+
+            background: #123f38;
+
+            color: white;
+
+        }
+
+
+        .flow-title {
+
+            text-align: center;
+
+            margin-bottom: 50px;
+
+        }
+
+
+        .flow-title h2 {
+
+            font-family: Georgia, serif;
+
+            font-size: 40px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .flow-title p {
+
+            color: #cdded5;
+
+        }
+
+
+        .technology-flow {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            flex-wrap: wrap;
+
+        }
+
+
+        .flow-box {
+
+            min-width: 145px;
+
+            padding: 20px 15px;
+
+            border-radius: 18px;
+
+            background: rgba(255,255,255,0.10);
+
+            border: 1px solid rgba(255,255,255,0.20);
+
+            text-align: center;
+
+        }
+
+
+        .flow-box strong {
+
+            display: block;
+
+            margin-bottom: 6px;
+
+        }
+
+
+        .flow-box span {
+
+            font-size: 12px;
+
+            color: #c9d9d0;
+
+        }
+
+
+        .flow-arrow {
+
+            font-size: 25px;
+
+            color: #9cc8ad;
+
+        }
+
+
+        /* =========================================
+           COMPONENTS
+        ========================================= */
+
+        .components-section {
+
+            padding: 80px 7%;
+
+        }
+
+
+        .components-grid {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+
+        }
+
+
+        .component {
+
+            background: #ffffff;
+
+            border-radius: 20px;
+
+            padding: 25px;
+
+            border: 1px solid #ddd7c4;
+
+        }
+
+
+        .component-number {
+
+            font-size: 12px;
+
+            color: #71927f;
+
+            letter-spacing: 1px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .component h3 {
+
+            color: #17483f;
+
+            font-family: Georgia, serif;
+
+            margin-bottom: 8px;
+
+        }
+
+
+        .component p {
+
+            color: #6a736c;
+
+            font-size: 14px;
+
+            line-height: 1.6;
+
+        }
+
+
+        /* =========================================
+           TECHNOLOGY BENEFITS
+        ========================================= */
+
+        .benefits-section {
+
+            padding: 80px 7%;
+
+            background: #e7eadb;
+
+        }
+
+
+        .benefits-grid {
+
+            max-width: 1000px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 18px;
+
+        }
+
+
+        .benefit {
+
+            text-align: center;
+
+            padding: 25px 15px;
+
+        }
+
+
+        .benefit-icon {
+
+            font-size: 30px;
+
+            margin-bottom: 12px;
+
+        }
+
+
+        .benefit h3 {
+
+            font-size: 17px;
+
+            color: #17483f;
+
+            margin-bottom: 7px;
+
+        }
+
+
+        .benefit p {
+
+            font-size: 13px;
+
+            color: #68736c;
+
+            line-height: 1.5;
+
+        }
+
+
+        /* =========================================
+           CTA
+        ========================================= */
+
+        .technology-cta {
+
+            padding: 80px 7%;
+
+            text-align: center;
+
+            background: #f5f0df;
+
+        }
+
+
+        .technology-cta h2 {
+
+            font-family: Georgia, serif;
+
+            font-size: 40px;
+
+            color: #123f38;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .technology-cta p {
+
+            color: #66716a;
+
+            max-width: 650px;
+
+            margin: 0 auto 25px;
+
+            line-height: 1.7;
+
+        }
+
+
+        .technology-btn {
+
+            display: inline-block;
+
+            padding: 14px 28px;
+
+            border-radius: 30px;
+
+            background: #123f38;
+
+            color: white;
+
+            text-decoration: none;
+
+            transition: 0.3s;
+
+        }
+
+
+        .technology-btn:hover {
+
+            background: #1b6658;
+
+            transform: translateY(-2px);
+
+        }
+
+
+        /* =========================================
+           MOBILE
+        ========================================= */
+
+        @media (max-width: 850px) {
+
+            .technology-hero h1 {
+
+                font-size: 43px;
+
+            }
+
+
+            .technology-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .components-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+            }
+
+
+            .benefits-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+            }
+
+        }
+
+
+        @media (max-width: 550px) {
+
+            .technology-hero {
+
+                padding: 70px 7%;
+
+            }
+
+
+            .technology-hero h1 {
+
+                font-size: 38px;
+
+            }
+
+
+            .components-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .benefits-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .flow-arrow {
+
+                transform: rotate(90deg);
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body class="technology-page">
+
+
+<!-- =========================================
+     NAVIGATION
+========================================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        🌿 KALASARA
+    </div>
+
+
+    <div class="nav-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="how-it-works.html">
+            Need & Impact
+        </a>
+
+        <a href="technology.html"
+           class="active">
+            Technology
+        </a>
+
+        <a href="dashboard.html">
+            Monitoring
+        </a>
+
+        <a href="team.html">
+            Team & Achievements
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section class="technology-hero">
+
+    <div class="technology-hero-content">
+
+        <div class="technology-tag">
+            KALASARA • SMART WATER TECHNOLOGY
+        </div>
+
+
+        <h1>
+            Technology Behind
+            KALASARA
+        </h1>
+
+
+        <p>
+            A compact, modular water purification system
+            designed to treat contaminated water while
+            continuously monitoring key water-quality
+            parameters.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     CAD MODEL
+========================================= -->
+
+<section class="cad-section">
+
+    <div class="section-title">
+
+        <h2>
+            KALASARA CAD Architecture
+        </h2>
+
+        <p>
+            The CAD model represents the internal arrangement
+            of the major purification, sensing, control and
+            power components inside the KALASARA system.
+        </p>
+
+    </div>
+
+
+    <div class="cad-container">
+
+        <img
+            src="images/technology-cad.png"
+            alt="KALASARA water purification system CAD model"
+            class="cad-image"
+        >
+
+        <div class="cad-caption">
+
+            KALASARA Prototype — Internal
+            Component Architecture
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     TECHNOLOGY
+========================================= -->
+
+<section class="technology-intro">
+
+    <div class="technology-grid">
+
+
+        <div class="technology-card">
+
+            <div class="technology-icon">
+                💧
+            </div>
+
+            <h3>
+                Multi-Stage Purification
+            </h3>
+
+            <p>
+                Water passes through multiple treatment
+                stages designed to reduce suspended
+                particles and selected contaminants before
+                the final output.
+            </p>
+
+        </div>
+
+
+
+        <div class="technology-card">
+
+            <div class="technology-icon">
+                🧪
+            </div>
+
+            <h3>
+                KALASARA Membrane
+            </h3>
+
+            <p>
+                The membrane stage acts as a selective
+                treatment barrier within the purification
+                process. Its performance is evaluated
+                experimentally for the target water quality.
+            </p>
+
+        </div>
+
+
+
+        <div class="technology-card">
+
+            <div class="technology-icon">
+                📡
+            </div>
+
+            <h3>
+                Smart Monitoring
+            </h3>
+
+            <p>
+                Sensors measure parameters such as pH,
+                TDS, turbidity and temperature. The readings
+                can be transmitted through an ESP32-based
+                monitoring system.
+            </p>
+
+        </div>
+
+
+
+        <div class="technology-card">
+
+            <div class="technology-icon">
+                ☀️
+            </div>
+
+            <h3>
+                Solar-Assisted Power
+            </h3>
+
+            <p>
+                The prototype is designed with a solar
+                power option to support operation in
+                locations where reliable grid power may
+                be limited.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     SYSTEM FLOW
+========================================= -->
+
+<section class="flow-section">
+
+    <div class="flow-title">
+
+        <h2>
+            How KALASARA Works
+        </h2>
+
+        <p>
+            Water treatment and monitoring flow
+        </p>
+
+    </div>
+
+
+    <div class="technology-flow">
+
+
+        <div class="flow-box">
+
+            <strong>
+                01. Raw Water
+            </strong>
+
+            <span>
+                Contaminated input
+            </span>
+
+        </div>
+
+
+        <div class="flow-arrow">
+            →
+        </div>
+
+
+        <div class="flow-box">
+
+            <strong>
+                02. Pre-Treatment
+            </strong>
+
+            <span>
+                Particle reduction
+            </span>
+
+        </div>
+
+
+        <div class="flow-arrow">
+            →
+        </div>
+
+
+        <div class="flow-box">
+
+            <strong>
+                03. Bio-Treatment
+            </strong>
+
+            <span>
+                Bio-based treatment
+            </span>
+
+        </div>
+
+
+        <div class="flow-arrow">
+            →
+        </div>
+
+
+        <div class="flow-box">
+
+            <strong>
+                04. Membrane
+            </strong>
+
+            <span>
+                Selective filtration
+            </span>
+
+        </div>
+
+
+        <div class="flow-arrow">
+            →
+        </div>
+
+
+        <div class="flow-box">
+
+            <strong>
+                05. Monitoring
+            </strong>
+
+            <span>
+                Quality sensing
+            </span>
+
+        </div>
+
+
+        <div class="flow-arrow">
+            →
+        </div>
+
+
+        <div class="flow-box">
+
+            <strong>
+                06. Output
+            </strong>
+
+            <span>
+                Treated water
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     COMPONENTS
+========================================= -->
+
+<section class="components-section">
+
+    <div class="section-title">
+
+        <h2>
+            Core Components
+        </h2>
+
+        <p>
+            Major hardware elements integrated into
+            the KALASARA prototype.
+        </p>
+
+    </div>
+
+
+    <div class="components-grid">
+
+
+        <div class="component">
+
+            <div class="component-number">
+                COMPONENT 01
+            </div>
+
+            <h3>
+                Water Inlet
+            </h3>
+
+            <p>
+                Receives untreated water and directs it
+                into the purification stages.
+            </p>
+
+        </div>
+
+
+        <div class="component">
+
+            <div class="component-number">
+                COMPONENT 02
+            </div>
+
+            <h3>
+                Pre-Filter
+            </h3>
+
+            <p>
+                Provides initial removal of larger suspended
+                particles before membrane treatment.
+            </p>
+
+        </div>
+
+
+        <div class="component">
+
+            <div class="component-number">
+                COMPONENT 03
+            </div>
+
+            <h3>
+                Treatment Chamber
+            </h3>
+
+            <p>
+                Provides the controlled chamber for the
+                selected bio-based treatment process.
+            </p>
+
+        </div>
+
+
+        <div class="component">
+
+            <div class="component-number">
+                COMPONENT 04
+            </div>
+
+            <h3>
+                KALASARA Membrane
+            </h3>
+
+            <p>
+                Provides the primary selective filtration
+                stage in the treatment pathway.
+            </p>
+
+        </div>
+
+
+        <div class="component">
+
+            <div class="component-number">
+                COMPONENT 05
+            </div>
+
+            <h3>
+                Sensor Unit
+            </h3>
+
+            <p>
+                Measures selected water-quality parameters
+                for system monitoring.
+            </p>
+
+        </div>
+
+
+        <div class="component">
+
+            <div class="component-number">
+                COMPONENT 06
+            </div>
+
+            <h3>
+                ESP32 Controller
+            </h3>
+
+            <p>
+                Collects sensor readings and provides the
+                connectivity layer for digital monitoring.
+            </p>
+
+        </div>
+
+
+        <div class="component">
+
+            <div class="component-number">
+                COMPONENT 07
+            </div>
+
+            <h3>
+                Solar Power
+            </h3>
+
+            <p>
+                Supports the system's power requirements
+                through a solar-assisted energy source.
+            </p>
+
+        </div>
+
+
+        <div class="component">
+
+            <div class="component-number">
+                COMPONENT 08
+            </div>
+
+            <h3>
+                Water Outlet
+            </h3>
+
+            <p>
+                Delivers treated water after passing through
+                the defined purification stages.
+            </p>
+
+        </div>
+
+
+        <div class="component">
+
+            <div class="component-number">
+                COMPONENT 09
+            </div>
+
+            <h3>
+                Digital Dashboard
+            </h3>
+
+            <p>
+                Displays sensor readings and system status
+                through the KALASARA monitoring interface.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     BENEFITS
+========================================= -->
+
+<section class="benefits-section">
+
+    <div class="section-title">
+
+        <h2>
+            Technology Highlights
+        </h2>
+
+    </div>
+
+
+    <div class="benefits-grid">
+
+
+        <div class="benefit">
+
+            <div class="benefit-icon">
+                ♻️
+            </div>
+
+            <h3>
+                Sustainable
+            </h3>
+
+            <p>
+                Designed with resource-efficient
+                treatment principles.
+            </p>
+
+        </div>
+
+
+        <div class="benefit">
+
+            <div class="benefit-icon">
+                📦
+            </div>
+
+            <h3>
+                Modular
+            </h3>
+
+            <p>
+                Major treatment stages can be
+                configured independently.
+            </p>
+
+        </div>
+
+
+        <div class="benefit">
+
+            <div class="benefit-icon">
+                📊
+            </div>
+
+            <h3>
+                Smart Monitoring
+            </h3>
+
+            <p>
+                Water-quality data can be viewed
+                digitally in real time.
+            </p>
+
+        </div>
+
+
+        <div class="benefit">
+
+            <div class="benefit-icon">
+                🌱
+            </div>
+
+            <h3>
+                Rural Ready
+            </h3>
+
+            <p>
+                Designed with portability and
+                low-resource environments in mind.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     CTA
+========================================= -->
+
+<section class="technology-cta">
+
+    <h2>
+        Explore KALASARA
+    </h2>
+
+    <p>
+        Discover how the technology, monitoring system
+        and purification process work together to create
+        a smart water-treatment platform.
+    </p>
+
+
+    <a
+        href="dashboard.html"
+        class="technology-btn"
+    >
+        View Real-Time Monitoring →
+    </a>
+
+</section>
+
+
+
+<!-- =========================================
+     FLOATING ORDER BUTTON
+========================================= -->
+
+<a
+    href="contact.html"
+    class="floating-order-btn"
+>
+
+    <span class="floating-cart">
+        🛒
+    </span>
+
+    <span class="floating-text">
+        Order Your<br>
+        Kalasara Now
+    </span>
+
+</a>
+
+
+</body>
+
+</html>

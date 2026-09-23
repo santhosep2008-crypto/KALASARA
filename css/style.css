@@ -3091,3 +3091,54 @@ nav a.active {
     display: block;
     object-fit: contain;
 }
+/* =========================================
+   KALASARA + JHARKHAND GOVERNMENT LOGO
+========================================= */
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .logo img {
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+
+    background: white;
+
+    padding: 2px;
+}
+
+.navbar .logo span {
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .navbar .logo img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .navbar .logo span {
+        font-size: 15px;
+    }
+
+}

@@ -3418,3 +3418,534 @@ footer,
     }
 
 }
+/* =========================================================
+   KALASARA - FINAL GLOBAL WEBSITE BACKGROUND
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   BASIC PAGE SETUP
+   --------------------------------------------------------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background: transparent !important;
+}
+
+body {
+    position: relative;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   FULL WEBSITE VIDEO BACKGROUND
+   ========================================================= */
+
+.site-background-video {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    object-fit: cover;
+
+    z-index: -2;
+
+    pointer-events: none;
+
+    display: block;
+}
+
+
+/* =========================================================
+   VIDEO OVERLAY
+   ========================================================= */
+
+.site-background-overlay {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(5, 35, 30, 0.48);
+
+    z-index: -1;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   KEEP WEBSITE CONTENT ABOVE VIDEO
+   ========================================================= */
+
+.navbar,
+main,
+header,
+footer,
+section,
+.hero,
+.how-hero,
+.monitor-hero,
+.monitor-dashboard,
+.need-section,
+.useful-section,
+.detail-section,
+.process-preview,
+.final-message,
+.sensor-flow,
+.monitor-note,
+.solution,
+.monitoring,
+.io-flow,
+.why,
+.performance,
+.impact,
+.research,
+.cta {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================================
+   REMOVE SOLID PAGE BACKGROUNDS
+   The animation must remain visible.
+   ========================================================= */
+
+.hero,
+.section,
+.problem-section,
+.solution,
+.monitoring,
+.why,
+.performance,
+.impact,
+.research,
+.cta,
+
+.need-section,
+.useful-section,
+.detail-section,
+.monitor-dashboard,
+.sensor-flow,
+.monitor-note,
+
+.technology-page,
+.contact-page,
+.dashboard-page,
+.team-page,
+.how-page,
+.prototype-page,
+.research-page,
+
+main {
+    background-color: transparent !important;
+}
+
+
+/* =========================================================
+   HERO SECTIONS
+   Keep gradients, but don't hide the video.
+   ========================================================= */
+
+.hero {
+    background:
+        radial-gradient(
+            circle at 80% 50%,
+            rgba(83, 232, 197, 0.16),
+            transparent 35%
+        ) !important;
+}
+
+
+/* =========================================================
+   HOW IT WORKS HERO
+   ========================================================= */
+
+.how-hero {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 31, 25, 0.70),
+            rgba(0, 50, 42, 0.42),
+            rgba(0, 20, 16, 0.12)
+        ),
+        url("../images/how-it-works.jpg") !important;
+
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+
+/* =========================================================
+   MONITORING HERO
+   ========================================================= */
+
+.monitor-hero {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 30, 24, 0.72),
+            rgba(0, 50, 42, 0.42),
+            rgba(0, 20, 15, 0.12)
+        ),
+        url("../images/monitoring.jpg") !important;
+
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+
+/* =========================================================
+   LIGHT SECTIONS
+   Glass effect instead of solid white
+   ========================================================= */
+
+.need-section,
+.useful-section,
+.monitor-dashboard,
+.monitor-note {
+    background: rgba(243, 240, 223, 0.72) !important;
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+
+/* =========================================================
+   ALTERNATE DETAIL SECTION
+   ========================================================= */
+
+.detail-section.alternate {
+    background: rgba(238, 243, 231, 0.62) !important;
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+
+/* =========================================================
+   DARK SECTIONS
+   Keep your KALASARA dark theme while showing animation.
+   ========================================================= */
+
+.problem-section,
+.solution,
+.monitoring,
+.why,
+.performance,
+.impact,
+.research,
+.process-preview,
+.sensor-flow {
+    background-color: rgba(6, 25, 21, 0.60) !important;
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.cta {
+    background:
+        radial-gradient(
+            circle,
+            rgba(83, 232, 197, 0.12),
+            transparent 55%
+        ) !important;
+}
+
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.problem-card,
+.process-card,
+.parameter,
+.io-box,
+.why-card,
+.comparison-table > div,
+.impact-card,
+.research-list div {
+    background: rgba(8, 31, 26, 0.68) !important;
+
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+
+/* =========================================================
+   LIGHT PAGE CARDS
+   ========================================================= */
+
+.benefit-button {
+    background: rgba(255, 255, 255, 0.58) !important;
+
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+.benefit-button:hover {
+    background: rgba(255, 255, 255, 0.78) !important;
+}
+
+
+/* =========================================================
+   DASHBOARD CARDS
+   ========================================================= */
+
+.quality-card,
+.monitor-parameter {
+    background: rgba(255, 255, 255, 0.78) !important;
+
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+
+/* =========================================================
+   TABS
+   ========================================================= */
+
+.monitor-tabs {
+    background: rgba(255, 255, 255, 0.60) !important;
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.navbar {
+    background: rgba(4, 35, 30, 0.58);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    z-index: 100;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    background: rgba(3, 11, 9, 0.78) !important;
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+
+/* =========================================================
+   JHARKHAND GOVERNMENT FLOATING LOGO
+   ========================================================= */
+
+.floating-government-logo {
+    position: fixed;
+
+    top: 20px;
+    left: 20px;
+
+    width: 68px;
+    height: 68px;
+
+    padding: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.30);
+
+    z-index: 99999;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.floating-government-logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+}
+
+.floating-government-logo:hover {
+    transform: scale(1.08);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.40);
+}
+
+.floating-government-logo:active {
+    transform: scale(0.95);
+}
+
+
+/* =========================================================
+   FLOATING ORDER BUTTON
+   ========================================================= */
+
+.floating-order-btn {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+
+    background: #123f38;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border: 2px solid #d8e4d4;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.30);
+
+    z-index: 99999;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.floating-cart {
+    font-size: 21px;
+
+    line-height: 1;
+
+    margin-bottom: 5px;
+}
+
+.floating-text {
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    line-height: 1.25;
+
+    color: #ffffff;
+}
+
+.floating-order-btn:hover {
+    transform: scale(1.08);
+
+    background: #1b6658;
+}
+
+.floating-order-btn:active {
+    transform: scale(0.95);
+}
+
+
+/* =========================================================
+   CAD IMAGE
+   ========================================================= */
+
+.cad-image-container {
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.75);
+
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.cad-image {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .site-background-overlay {
+        background: rgba(5, 35, 30, 0.56);
+    }
+
+    .navbar {
+        background: rgba(4, 35, 30, 0.82);
+    }
+
+    .floating-government-logo {
+        width: 52px;
+        height: 52px;
+
+        top: 12px;
+        left: 12px;
+    }
+
+    .floating-order-btn {
+        width: 72px;
+        height: 72px;
+
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .floating-cart {
+        font-size: 17px;
+    }
+
+    .floating-text {
+        font-size: 8px;
+    }
+
+}

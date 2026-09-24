@@ -236,113 +236,100 @@
 
 
 
-    <!-- =====================================================
-         HERO / MAIN BANNER
-         ===================================================== -->
+    <!-- ================= HERO IMAGE CAROUSEL ================= -->
 
-    <main>
+<section class="hero-carousel">
 
-        <section class="portal-hero">
+    <div class="hero-slide active">
+        <img src="images/hero1.jpg" alt="KALASARA Water Purification">
+        <div class="hero-overlay"></div>
 
-            <div class="portal-hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-tag">KALASARA</span>
 
+            <h1>Smart Water Purification</h1>
 
-            <div class="portal-hero-content">
+            <p>
+                Smart water purification and quality monitoring
+                for rural and mining-affected areas.
+            </p>
 
-                <div class="portal-hero-label">
-                    SMART WATER PURIFICATION SYSTEM
-                </div>
-
-
-                <h1>
-
-                    Clean Water.
-                    <br>
-
-                    <span>Smarter Monitoring.</span>
-
-                </h1>
+            <a href="how-it-works.html" class="hero-btn">
+                Explore KALASARA →
+            </a>
+        </div>
+    </div>
 
 
-                <p>
+    <div class="hero-slide">
+        <img src="images/hero2.jpg" alt="KALASARA Technology">
+        <div class="hero-overlay"></div>
 
-                    KALASARA is a modular water purification and
-                    quality monitoring platform designed for
-                    rural and mining-affected environments.
+        <div class="hero-content">
+            <span class="hero-tag">SMART TECHNOLOGY</span>
 
-                </p>
+            <h1>Purify. Monitor. Protect.</h1>
 
+            <p>
+                Multi-stage purification with real-time
+                water quality monitoring.
+            </p>
 
-                <div class="portal-hero-buttons">
-
-                    <a
-                        href="how-it-works.html"
-                        class="portal-primary-button">
-
-                        EXPLORE KALASARA
-                        <span>→</span>
-
-                    </a>
-
-
-                    <a
-                        href="dashboard.html"
-                        class="portal-secondary-button">
-
-                        LIVE DASHBOARD
-                        <span>↗</span>
-
-                    </a>
-
-                </div>
+            <a href="technology.html" class="hero-btn">
+                View Technology →
+            </a>
+        </div>
+    </div>
 
 
-                <div class="portal-hero-meta">
+    <div class="hero-slide">
+        <img src="images/hero3.jpg" alt="KALASARA Monitoring">
+        <div class="hero-overlay"></div>
 
-                    <div>
-                        <strong>01</strong>
-                        Modular Treatment
-                    </div>
+        <div class="hero-content">
+            <span class="hero-tag">REAL-TIME MONITORING</span>
 
-                    <div>
-                        <strong>02</strong>
-                        Smart Monitoring
-                    </div>
+            <h1>Know Your Water</h1>
 
-                    <div>
-                        <strong>03</strong>
-                        Rural Deployment
-                    </div>
+            <p>
+                Monitor important water-quality parameters
+                through the KALASARA dashboard.
+            </p>
 
-                </div>
-
-            </div>
+            <a href="dashboard.html" class="hero-btn">
+                Open Dashboard →
+            </a>
+        </div>
+    </div>
 
 
-            <div class="portal-hero-side">
+    <!-- LEFT / RIGHT BUTTONS -->
 
-                <div class="portal-water-card">
+    <button class="hero-arrow hero-prev" onclick="heroChange(-1)">
+        ❮
+    </button>
 
-                    <div class="portal-water-icon">
-                        💧
-                    </div>
+    <button class="hero-arrow hero-next" onclick="heroChange(1)">
+        ❯
+    </button>
 
-                    <span>PROJECT FOCUS</span>
 
-                    <strong>
-                        WATER QUALITY
-                    </strong>
+    <!-- DOTS -->
 
-                    <p>
-                        Purification + Monitoring
-                    </p>
+    <div class="hero-dots">
 
-                </div>
+        <span class="hero-dot active"
+              onclick="heroGoTo(0)"></span>
 
-            </div>
+        <span class="hero-dot"
+              onclick="heroGoTo(1)"></span>
 
-        </section>
+        <span class="hero-dot"
+              onclick="heroGoTo(2)"></span>
 
+    </div>
+
+</section>
 
 
         <!-- =================================================

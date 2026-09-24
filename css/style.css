@@ -3308,3 +3308,113 @@ header,
     }
 
 }
+/* =========================================
+   KALASARA - COMMON VIDEO BACKGROUND
+   USE ON ALL PAGES
+========================================= */
+
+html,
+body {
+    background: transparent !important;
+}
+
+
+/* VIDEO */
+
+.site-background-video {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    object-fit: cover;
+
+    z-index: -100;
+
+    pointer-events: none;
+}
+
+
+/* DARK/GREEN OVERLAY */
+
+.site-background-overlay {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(7, 43, 37, 0.48);
+
+    z-index: -99;
+
+    pointer-events: none;
+}
+
+
+/* KEEP WEBSITE CONTENT ABOVE VIDEO */
+
+.navbar,
+section,
+main,
+header,
+footer,
+.hero,
+.container,
+.card,
+.contact-section,
+.cad-section,
+.tech-section,
+.components-section,
+.flow-section,
+.benefits-section {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================
+   MAKE OLD SOLID BACKGROUNDS TRANSPARENT
+========================================= */
+
+.technology-page,
+.contact-page,
+.dashboard-page,
+.team-page,
+.how-page {
+    background: transparent !important;
+}
+
+
+/* =========================================
+   OPTIONAL GLASS EFFECT FOR SECTIONS
+========================================= */
+
+.tech-card,
+.technology-card,
+.component,
+.contact-info,
+.order-card,
+.cad-wrapper,
+.parameter-card,
+.quality-card {
+    backdrop-filter: blur(5px);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .site-background-overlay {
+        background: rgba(7, 43, 37, 0.55);
+    }
+
+}

@@ -8,19 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="KALASARA – Smart Water Purification System for polluted and mining-affected environments.">
+        content="KALASARA – Smart Water Purification and Quality Monitoring System for Rural and Mining-Affected Areas.">
 
-    <title>KALASARA | Smart Water Purification</title>
+    <meta name="theme-color" content="#063c32">
+
+    <title>KALASARA | Smart Water Purification & Monitoring</title>
 
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 
-<body>
+<body class="portal-home">
 
     <!-- =====================================================
-         GLOBAL KALASARA VIDEO BACKGROUND
+         GLOBAL WATER VIDEO BACKGROUND
          ===================================================== -->
 
     <video
@@ -30,1330 +32,1313 @@
         loop
         playsinline
         preload="auto"
-        aria-hidden="true"
-    >
+        aria-hidden="true">
+
         <source
             src="images/kalasara-background.mp4"
-            type="video/mp4"
-        >
+            type="video/mp4">
+
     </video>
 
 
-    <!-- =====================================================
-         GLOBAL VIDEO OVERLAY
-         ===================================================== -->
-
     <div
         class="site-background-overlay"
-        aria-hidden="true"
-    ></div>
+        aria-hidden="true">
+    </div>
+
 
 
     <!-- =====================================================
-         FLOATING JHARKHAND GOVERNMENT LOGO
+         FLOATING GOVERNMENT LOGO
          ===================================================== -->
 
     <a
         href="index.html"
         class="floating-government-logo"
-        title="KALASARA Home"
-    >
+        title="KALASARA Home">
+
         <img
             src="images/jharkhand-logo.jpeg"
-            alt="Government of Jharkhand"
-        >
+            alt="Government of Jharkhand">
+
     </a>
 
 
+
     <!-- =====================================================
-         NAVIGATION
+         GOVERNMENT STYLE TOP BAR
          ===================================================== -->
 
-    <header class="navbar">
+    <div class="portal-topbar">
 
-        <div class="logo">
+        <div class="portal-topbar-left">
 
-            <img
-                src="images/jharkhand-logo.jpeg"
-                alt="Government of Jharkhand"
-            >
+            <span>Government Initiative</span>
 
-            <span>KALASARA</span>
+            <span class="portal-divider">|</span>
+
+            <span>Smart Water Purification</span>
 
         </div>
 
 
-        <nav>
+        <div class="portal-topbar-right">
 
-            <a href="index.html" class="active">
-                Home
+            <a href="contact.html">
+                Contact
             </a>
 
-            <a href="how-it-works.html">
-                How It Works
-            </a>
-
-            <a href="technology.html">
-                Technology
-            </a>
-
-            <a href="prototype.html">
-                Prototype
-            </a>
+            <span class="portal-divider">|</span>
 
             <a href="dashboard.html">
-                Dashboard
+                Live Monitoring
             </a>
 
-            <a href="team.html">
-                Team
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         MAIN GOVERNMENT STYLE HEADER
+         ===================================================== -->
+
+    <header class="portal-header">
+
+        <div class="portal-brand">
+
+            <img
+                src="images/jharkhand-logo.jpeg"
+                alt="Government of Jharkhand"
+                class="portal-brand-logo">
+
+
+            <div class="portal-brand-text">
+
+                <div class="portal-brand-title">
+                    KALASARA
+                </div>
+
+                <div class="portal-brand-subtitle">
+                    Smart Water Purification & Quality Monitoring System
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="portal-header-actions">
+
+            <a href="dashboard.html" class="portal-header-link">
+                LIVE DASHBOARD
             </a>
 
-        </nav>
+            <a href="contact.html" class="portal-header-button">
+                GET IN TOUCH
+            </a>
+
+        </div>
 
     </header>
 
 
 
     <!-- =====================================================
-         HERO
+         NAVIGATION
          ===================================================== -->
 
-    <section class="hero">
+    <nav class="portal-navigation">
 
-        <div class="hero-content">
+        <div class="portal-nav-inner">
 
-            <p class="tagline">
-                SMART WATER PURIFICATION SYSTEM
-            </p>
+            <a href="index.html" class="portal-nav-link active">
+                HOME
+            </a>
+
+            <a href="how-it-works.html" class="portal-nav-link">
+                ABOUT KALASARA
+            </a>
+
+            <a href="technology.html" class="portal-nav-link">
+                TECHNOLOGY
+            </a>
+
+            <a href="prototype.html" class="portal-nav-link">
+                PROTOTYPE
+            </a>
+
+            <a href="dashboard.html" class="portal-nav-link">
+                MONITORING
+            </a>
+
+            <a href="research.html" class="portal-nav-link">
+                RESEARCH
+            </a>
+
+            <a href="team.html" class="portal-nav-link">
+                TEAM
+            </a>
+
+            <a href="contact.html" class="portal-nav-link">
+                CONTACT
+            </a>
+
+        </div>
+
+    </nav>
 
 
-            <h1>
 
-                Turning Polluted Water
+    <!-- =====================================================
+         MOBILE NAVIGATION
+         ===================================================== -->
 
-                <span>
-                    Into Safer Water.
+    <div class="portal-mobile-bar">
+
+        <button
+            type="button"
+            class="portal-menu-button"
+            onclick="togglePortalMenu()">
+
+            ☰
+            <span>MENU</span>
+
+        </button>
+
+        <span class="portal-mobile-title">
+            KALASARA
+        </span>
+
+    </div>
+
+
+    <div id="portalMobileMenu" class="portal-mobile-menu">
+
+        <a href="index.html">HOME</a>
+
+        <a href="how-it-works.html">ABOUT KALASARA</a>
+
+        <a href="technology.html">TECHNOLOGY</a>
+
+        <a href="prototype.html">PROTOTYPE</a>
+
+        <a href="dashboard.html">MONITORING</a>
+
+        <a href="research.html">RESEARCH</a>
+
+        <a href="team.html">TEAM</a>
+
+        <a href="contact.html">CONTACT</a>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         HERO / MAIN BANNER
+         ===================================================== -->
+
+    <main>
+
+        <section class="portal-hero">
+
+            <div class="portal-hero-overlay"></div>
+
+
+            <div class="portal-hero-content">
+
+                <div class="portal-hero-label">
+                    SMART WATER PURIFICATION SYSTEM
+                </div>
+
+
+                <h1>
+
+                    Clean Water.
+                    <br>
+
+                    <span>Smarter Monitoring.</span>
+
+                </h1>
+
+
+                <p>
+
+                    KALASARA is a modular water purification and
+                    quality monitoring platform designed for
+                    rural and mining-affected environments.
+
+                </p>
+
+
+                <div class="portal-hero-buttons">
+
+                    <a
+                        href="how-it-works.html"
+                        class="portal-primary-button">
+
+                        EXPLORE KALASARA
+                        <span>→</span>
+
+                    </a>
+
+
+                    <a
+                        href="dashboard.html"
+                        class="portal-secondary-button">
+
+                        LIVE DASHBOARD
+                        <span>↗</span>
+
+                    </a>
+
+                </div>
+
+
+                <div class="portal-hero-meta">
+
+                    <div>
+                        <strong>01</strong>
+                        Modular Treatment
+                    </div>
+
+                    <div>
+                        <strong>02</strong>
+                        Smart Monitoring
+                    </div>
+
+                    <div>
+                        <strong>03</strong>
+                        Rural Deployment
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="portal-hero-side">
+
+                <div class="portal-water-card">
+
+                    <div class="portal-water-icon">
+                        💧
+                    </div>
+
+                    <span>PROJECT FOCUS</span>
+
+                    <strong>
+                        WATER QUALITY
+                    </strong>
+
+                    <p>
+                        Purification + Monitoring
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             IMPORTANT STRIP
+             ================================================= -->
+
+        <section class="portal-important">
+
+            <div class="portal-important-label">
+
+                <span class="portal-alert-icon">
+                    !
                 </span>
 
-            </h1>
+                IMPORTANT
+
+            </div>
 
 
-            <p class="hero-description">
+            <div class="portal-important-content">
 
-                KALASARA is a modular water purification and monitoring
-                system designed for polluted and mining-affected
-                environments.
+                <span>
+                    KALASARA Smart Water Purification & Quality Monitoring System
+                </span>
 
-                The system combines pre-filtration, bio-coagulation,
-                membrane-based separation and real-time water-quality
-                monitoring.
+                <span class="portal-important-dot">
+                    •
+                </span>
 
-            </p>
+                <span>
+                    Designed for rural and mining-affected environments
+                </span>
+
+                <span class="portal-important-dot">
+                    •
+                </span>
+
+                <span>
+                    Real-time water quality monitoring
+                </span>
+
+            </div>
+
+        </section>
 
 
-            <div class="hero-buttons">
+
+        <!-- =================================================
+             QUICK SERVICES
+             ================================================= -->
+
+        <section class="portal-services">
+
+            <div class="portal-section-heading">
+
+                <div>
+
+                    <span class="portal-section-label">
+                        QUICK ACCESS
+                    </span>
+
+                    <h2>
+                        KALASARA Services
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    Explore the major components of the KALASARA
+                    system through the portal.
+                </p>
+
+            </div>
+
+
+            <div class="portal-service-grid">
+
 
                 <a
                     href="how-it-works.html"
-                    class="primary-btn"
-                >
-                    EXPLORE KALASARA
+                    class="portal-service-card">
+
+                    <div class="portal-service-number">
+                        01
+                    </div>
+
+                    <div class="portal-service-icon">
+                        💧
+                    </div>
+
+                    <h3>
+                        How It Works
+                    </h3>
+
+                    <p>
+                        Understand the complete purification workflow.
+                    </p>
+
+                    <span class="portal-card-arrow">
+                        →
+                    </span>
+
                 </a>
+
+
+
+                <a
+                    href="technology.html"
+                    class="portal-service-card">
+
+                    <div class="portal-service-number">
+                        02
+                    </div>
+
+                    <div class="portal-service-icon">
+                        ⚙
+                    </div>
+
+                    <h3>
+                        Technology
+                    </h3>
+
+                    <p>
+                        Explore the treatment technologies and system architecture.
+                    </p>
+
+                    <span class="portal-card-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+
+                <a
+                    href="prototype.html"
+                    class="portal-service-card">
+
+                    <div class="portal-service-number">
+                        03
+                    </div>
+
+                    <div class="portal-service-icon">
+                        ◫
+                    </div>
+
+                    <h3>
+                        Prototype
+                    </h3>
+
+                    <p>
+                        View the KALASARA physical prototype and components.
+                    </p>
+
+                    <span class="portal-card-arrow">
+                        →
+                    </span>
+
+                </a>
+
 
 
                 <a
                     href="dashboard.html"
-                    class="secondary-btn"
-                >
-                    LIVE DASHBOARD
+                    class="portal-service-card">
+
+                    <div class="portal-service-number">
+                        04
+                    </div>
+
+                    <div class="portal-service-icon">
+                        📊
+                    </div>
+
+                    <h3>
+                        Monitoring
+                    </h3>
+
+                    <p>
+                        Observe water-quality parameters through the dashboard.
+                    </p>
+
+                    <span class="portal-card-arrow">
+                        →
+                    </span>
+
                 </a>
 
             </div>
 
-        </div>
-
-
-        <div class="hero-visual">
-
-            <div class="water-circle">
-
-                <div class="water-text">
-                    KALASARA
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
+        </section>
 
 
 
-    <!-- =====================================================
-         PROBLEM
-         ===================================================== -->
+        <!-- =================================================
+             KALASARA AT A GLANCE
+             ================================================= -->
 
-    <section class="section problem-section">
+        <section class="portal-glance">
 
-        <div class="section-title">
+            <div class="portal-section-heading centered">
 
-            <p>
-                THE PROBLEM
-            </p>
-
-
-            <h2>
-
-                Water contamination
-                needs
-
-                <span>
-                    smarter treatment.
+                <span class="portal-section-label">
+                    KALASARA AT A GLANCE
                 </span>
 
-            </h2>
-
-
-            <p class="section-description">
-
-                Polluted and mining-affected water can contain
-                suspended solids, turbidity, dissolved contaminants
-                and changes in water chemistry.
-
-            </p>
-
-        </div>
-
-
-        <div class="problem-grid">
-
-
-            <div class="problem-card">
-
-                <div class="card-number">
-                    01
-                </div>
-
-                <h3>
-                    TSS
-                </h3>
+                <h2>
+                    One platform. Multiple capabilities.
+                </h2>
 
                 <p>
-
-                    Suspended particles and sediments can
-                    significantly affect water quality.
-
+                    KALASARA combines water treatment, membrane
+                    separation and digital monitoring into one
+                    modular system.
                 </p>
 
             </div>
 
 
+            <div class="portal-glance-grid">
 
-            <div class="problem-card">
 
-                <div class="card-number">
-                    02
+                <div class="portal-glance-card">
+
+                    <div class="glance-icon">
+                        ☀
+                    </div>
+
+                    <strong>
+                        SOLAR POWERED
+                    </strong>
+
+                    <p>
+                        Designed around a deployable,
+                        energy-conscious architecture.
+                    </p>
+
                 </div>
 
-                <h3>
-                    TURBIDITY
-                </h3>
+
+
+                <div class="portal-glance-card">
+
+                    <div class="glance-icon">
+                        💧
+                    </div>
+
+                    <strong>
+                        MULTI-STAGE
+                    </strong>
+
+                    <p>
+                        Multiple treatment stages work
+                        together to improve water quality.
+                    </p>
+
+                </div>
+
+
+
+                <div class="portal-glance-card">
+
+                    <div class="glance-icon">
+                        📡
+                    </div>
+
+                    <strong>
+                        SMART MONITORING
+                    </strong>
+
+                    <p>
+                        Sensors observe important water-quality
+                        parameters during operation.
+                    </p>
+
+                </div>
+
+
+
+                <div class="portal-glance-card">
+
+                    <div class="glance-icon">
+                        🏞
+                    </div>
+
+                    <strong>
+                        REMOTE READY
+                    </strong>
+
+                    <p>
+                        Designed for challenging locations
+                        with limited infrastructure.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ABOUT / PROBLEM
+             ================================================= -->
+
+        <section class="portal-about">
+
+            <div class="portal-about-image">
+
+                <div class="portal-image-frame">
+
+                    <div class="portal-image-water">
+                        KALASARA
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="portal-about-content">
+
+                <span class="portal-section-label">
+                    ABOUT THE PROJECT
+                </span>
+
+                <h2>
+                    Addressing challenging
+                    water environments.
+                </h2>
 
                 <p>
 
-                    Fine particles make water cloudy and
-                    interfere with downstream treatment.
+                    Polluted and mining-affected water can contain
+                    suspended solids, turbidity, dissolved contaminants
+                    and changes in water chemistry.
 
+                </p>
+
+
+                <div class="portal-about-points">
+
+                    <div>
+                        <span>01</span>
+                        <strong>Suspended Solids</strong>
+                    </div>
+
+                    <div>
+                        <span>02</span>
+                        <strong>Turbidity</strong>
+                    </div>
+
+                    <div>
+                        <span>03</span>
+                        <strong>Dissolved Contaminants</strong>
+                    </div>
+
+                    <div>
+                        <span>04</span>
+                        <strong>Remote Locations</strong>
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="how-it-works.html"
+                    class="portal-text-link">
+
+                    READ MORE ABOUT KALASARA
+                    →
+                    
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PURIFICATION TECHNOLOGY
+             ================================================= -->
+
+        <section class="portal-technology">
+
+            <div class="portal-section-heading centered">
+
+                <span class="portal-section-label">
+                    PURIFICATION TECHNOLOGY
+                </span>
+
+                <h2>
+                    From raw water to monitored output.
+                </h2>
+
+                <p>
+                    KALASARA uses a modular treatment architecture
+                    where each stage has a defined role.
                 </p>
 
             </div>
 
 
+            <div class="portal-flow">
 
-            <div class="problem-card">
 
-                <div class="card-number">
-                    03
+                <div class="portal-flow-item">
+
+                    <span>01</span>
+
+                    <strong>
+                        RAW WATER
+                    </strong>
+
+                    <small>
+                        Input
+                    </small>
+
                 </div>
 
-                <h3>
-                    HEAVY METALS
-                </h3>
 
-                <p>
-
-                    Mining-affected water may contain
-                    dissolved metal contaminants requiring
-                    targeted treatment.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="problem-card">
-
-                <div class="card-number">
-                    04
+                <div class="portal-flow-arrow">
+                    →
                 </div>
 
-                <h3>
-                    REMOTE AREAS
-                </h3>
 
-                <p>
+                <div class="portal-flow-item">
 
-                    Conventional treatment infrastructure
-                    may be difficult to deploy and maintain
-                    in remote locations.
+                    <span>02</span>
 
-                </p>
+                    <strong>
+                        SS MESH
+                    </strong>
 
-            </div>
+                    <small>
+                        Pre-filtration
+                    </small>
 
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         KALASARA SOLUTION
-         ===================================================== -->
-
-    <section class="solution">
-
-        <div class="solution-content">
-
-            <p class="tagline">
-                OUR SOLUTION
-            </p>
-
-
-            <h2>
-                KALASARA
-            </h2>
-
-
-            <h3>
-                One system. Multiple treatment stages.
-            </h3>
-
-
-            <p>
-
-                KALASARA follows a modular treatment architecture
-                where different purification stages work together
-                to progressively improve water quality.
-
-            </p>
-
-
-            <p>
-
-                Instead of depending on a single treatment mechanism,
-                the system combines physical filtration,
-                bio-assisted coagulation, membrane separation
-                and digital monitoring.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="architecture-box">
-
-            <div class="architecture-item">
-                RAW WATER
-            </div>
-
-            <span>→</span>
-
-            <div class="architecture-item">
-                SS MESH
-            </div>
-
-            <span>→</span>
-
-            <div class="architecture-item">
-                BIO-COAGULATION
-            </div>
-
-            <span>→</span>
-
-            <div class="architecture-item">
-
-                KALASARA
-                <br>
-                MEMBRANE
-
-            </div>
-
-            <span>→</span>
-
-            <div class="architecture-item">
-                FINAL
-                <br>
-                TREATMENT
-            </div>
-
-            <span>→</span>
-
-            <div class="architecture-item output">
-
-                TREATED
-                <br>
-                WATER
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         PURIFICATION PROCESS
-         ===================================================== -->
-
-    <section class="section">
-
-        <div class="section-title">
-
-            <p>
-                PURIFICATION PROCESS
-            </p>
-
-
-            <h2>
-
-                From contaminated water
-                to
-
-                <span>
-                    monitored output.
-                </span>
-
-            </h2>
-
-        </div>
-
-
-        <div class="process-grid">
-
-
-            <div class="process-card">
-
-                <div class="process-number">
-                    01
                 </div>
 
-                <h3>
-                    Raw Water Chamber
-                </h3>
 
-                <p>
-
-                    Contaminated source water enters the
-                    KALASARA treatment system.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="process-card">
-
-                <div class="process-number">
-                    02
+                <div class="portal-flow-arrow">
+                    →
                 </div>
 
-                <h3>
-                    Stainless-Steel Mesh
-                </h3>
 
-                <p>
+                <div class="portal-flow-item">
 
-                    The initial physical filtration stage
-                    captures larger suspended particles
-                    and debris.
+                    <span>03</span>
 
-                </p>
+                    <strong>
+                        BIO-TREATMENT
+                    </strong>
 
-            </div>
+                    <small>
+                        Treatment
+                    </small>
 
-
-
-            <div class="process-card">
-
-                <div class="process-number">
-                    03
                 </div>
 
-                <h3>
-                    Bio-Coagulation
-                </h3>
 
-                <p>
-
-                    Bio-assisted coagulation promotes the
-                    aggregation of fine suspended contaminants
-                    for easier separation.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="process-card">
-
-                <div class="process-number">
-                    04
+                <div class="portal-flow-arrow">
+                    →
                 </div>
 
-                <h3>
-                    Kalasara Membrane
-                </h3>
 
-                <p>
+                <div class="portal-flow-item featured">
 
-                    The membrane stage provides controlled
-                    separation of remaining contaminants.
+                    <span>04</span>
 
-                </p>
+                    <strong>
+                        KALASARA
+                        <br>
+                        MEMBRANE
+                    </strong>
 
-            </div>
+                    <small>
+                        Separation
+                    </small>
 
-
-
-            <div class="process-card">
-
-                <div class="process-number">
-                    05
                 </div>
 
-                <h3>
-                    Final Treatment
-                </h3>
 
-                <p>
-
-                    Additional polishing can be incorporated
-                    depending on the required treatment
-                    configuration.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="process-card">
-
-                <div class="process-number">
-                    06
+                <div class="portal-flow-arrow">
+                    →
                 </div>
 
-                <h3>
-                    Quality Monitoring
-                </h3>
 
-                <p>
+                <div class="portal-flow-item">
 
-                    Sensors continuously monitor important
-                    water-quality parameters.
+                    <span>05</span>
 
-                </p>
+                    <strong>
+                        FINAL
+                        <br>
+                        TREATMENT
+                    </strong>
+
+                    <small>
+                        Polishing
+                    </small>
+
+                </div>
+
+
+                <div class="portal-flow-arrow">
+                    →
+                </div>
+
+
+                <div class="portal-flow-item output">
+
+                    <span>06</span>
+
+                    <strong>
+                        TREATED
+                        <br>
+                        WATER
+                    </strong>
+
+                    <small>
+                        Output
+                    </small>
+
+                </div>
 
             </div>
 
 
-        </div>
+            <div class="portal-center-button">
+
+                <a
+                    href="technology.html"
+                    class="portal-primary-button">
+
+                    VIEW TECHNOLOGY
+                    →
+                    
+                </a>
+
+            </div>
+
+        </section>
 
 
-        <div class="center-button">
 
-            <a
-                href="how-it-works.html"
-                class="primary-btn"
-            >
-                VIEW COMPLETE PROCESS →
-            </a>
+        <!-- =================================================
+             MONITORING
+             ================================================= -->
 
-        </div>
+        <section class="portal-monitoring">
 
-    </section>
+            <div class="portal-monitoring-header">
+
+                <div>
+
+                    <span class="portal-section-label">
+                        SMART MONITORING
+                    </span>
+
+                    <h2>
+                        Water quality,
+                        measured digitally.
+                    </h2>
+
+                    <p>
+                        KALASARA integrates sensors and digital
+                        monitoring to observe important parameters
+                        during system operation.
+                    </p>
+
+                </div>
 
 
+                <a
+                    href="dashboard.html"
+                    class="portal-dashboard-button">
 
-    <!-- =====================================================
-         SMART MONITORING
-         ===================================================== -->
+                    OPEN DASHBOARD
+                    ↗
 
-    <section class="monitoring">
+                </a>
 
-        <div class="section-title monitoring-title">
+            </div>
 
-            <p>
-                SMART MONITORING
+
+            <div class="portal-parameters">
+
+
+                <div class="portal-parameter">
+
+                    <span>pH</span>
+
+                    <strong>
+                        —
+                    </strong>
+
+                    <small>
+                        Acidity / Alkalinity
+                    </small>
+
+                </div>
+
+
+                <div class="portal-parameter">
+
+                    <span>TDS</span>
+
+                    <strong>
+                        —
+                    </strong>
+
+                    <small>
+                        Dissolved Solids
+                    </small>
+
+                </div>
+
+
+                <div class="portal-parameter">
+
+                    <span>TSS</span>
+
+                    <strong>
+                        —
+                    </strong>
+
+                    <small>
+                        Suspended Solids
+                    </small>
+
+                </div>
+
+
+                <div class="portal-parameter">
+
+                    <span>NTU</span>
+
+                    <strong>
+                        —
+                    </strong>
+
+                    <small>
+                        Turbidity
+                    </small>
+
+                </div>
+
+
+                <div class="portal-parameter">
+
+                    <span>°C</span>
+
+                    <strong>
+                        —
+                    </strong>
+
+                    <small>
+                        Temperature
+                    </small>
+
+                </div>
+
+
+                <div class="portal-parameter">
+
+                    <span>FLOW</span>
+
+                    <strong>
+                        —
+                    </strong>
+
+                    <small>
+                        Water Flow
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="portal-data-flow">
+
+                <span>SENSORS</span>
+
+                <b>→</b>
+
+                <span>CONTROLLER</span>
+
+                <b>→</b>
+
+                <span>FIREBASE</span>
+
+                <b>→</b>
+
+                <span>KALASARA DASHBOARD</span>
+
+            </div>
+
+
+            <p class="portal-demo-note">
+                Monitoring values shown here are placeholders until
+                validated prototype readings are connected.
             </p>
 
+        </section>
 
-            <h2>
 
-                The water doesn't just get treated.
 
-                <span>
-                    It gets monitored.
-                </span>
+        <!-- =================================================
+             APPLICATIONS
+             ================================================= -->
 
-            </h2>
+        <section class="portal-applications">
 
+            <div class="portal-section-heading">
 
-            <p class="section-description">
+                <div>
 
-                KALASARA integrates sensors and digital
-                monitoring to observe water-quality parameters
-                throughout system operation.
+                    <span class="portal-section-label">
+                        POTENTIAL APPLICATIONS
+                    </span>
 
-            </p>
+                    <h2>
+                        Designed for challenging environments.
+                    </h2>
 
-        </div>
-
-
-        <div class="parameter-grid">
-
-
-            <div class="parameter">
-
-                <strong>
-                    pH
-                </strong>
-
-                <small>
-                    Acidity / Alkalinity
-                </small>
-
-            </div>
-
-
-            <div class="parameter">
-
-                <strong>
-                    TDS
-                </strong>
-
-                <small>
-                    Dissolved Solids
-                </small>
-
-            </div>
-
-
-            <div class="parameter">
-
-                <strong>
-                    TSS
-                </strong>
-
-                <small>
-                    Suspended Solids
-                </small>
-
-            </div>
-
-
-            <div class="parameter">
-
-                <strong>
-                    NTU
-                </strong>
-
-                <small>
-                    Turbidity
-                </small>
-
-            </div>
-
-
-            <div class="parameter">
-
-                <strong>
-                    °C
-                </strong>
-
-                <small>
-                    Temperature
-                </small>
-
-            </div>
-
-
-            <div class="parameter">
-
-                <strong>
-                    FLOW
-                </strong>
-
-                <small>
-                    Water Flow
-                </small>
-
-            </div>
-
-
-        </div>
-
-
-        <div class="data-flow">
-
-            <div>
-                SENSORS
-            </div>
-
-            <span>→</span>
-
-            <div>
-                CONTROLLER
-            </div>
-
-            <span>→</span>
-
-            <div>
-                FIREBASE
-            </div>
-
-            <span>→</span>
-
-            <div>
-                KALASARA
-                <br>
-                DASHBOARD
-            </div>
-
-        </div>
-
-
-        <div class="center-button">
-
-            <a
-                href="dashboard.html"
-                class="primary-btn"
-            >
-                OPEN LIVE DASHBOARD →
-            </a>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         INPUT → PROCESS → OUTPUT
-         ===================================================== -->
-
-    <section class="section">
-
-        <div class="section-title">
-
-            <p>
-                SYSTEM ARCHITECTURE
-            </p>
-
-
-            <h2>
-
-                <span>
-                    Input → Process → Output
-                </span>
-
-            </h2>
-
-
-            <p class="section-description">
-
-                Each treatment stage has a defined role in
-                progressively processing the incoming water.
-
-            </p>
-
-        </div>
-
-
-        <div class="io-flow">
-
-
-            <div class="io-box input-box">
-
-                <span>
-                    INPUT
-                </span>
-
-                <h3>
-                    CONTAMINATED
-                    <br>
-                    WATER
-                </h3>
-
-            </div>
-
-
-            <div class="io-arrow">
-                ↓
-            </div>
-
-
-            <div class="io-box">
-
-                <span>
-                    STAGE 01
-                </span>
-
-                <h3>
-                    PRE-FILTRATION
-                </h3>
-
-            </div>
-
-
-            <div class="io-arrow">
-                ↓
-            </div>
-
-
-            <div class="io-box">
-
-                <span>
-                    STAGE 02
-                </span>
-
-                <h3>
-                    BIO-COAGULATION
-                </h3>
-
-            </div>
-
-
-            <div class="io-arrow">
-                ↓
-            </div>
-
-
-            <div class="io-box">
-
-                <span>
-                    STAGE 03
-                </span>
-
-                <h3>
-                    MEMBRANE
-                    <br>
-                    SEPARATION
-                </h3>
-
-            </div>
-
-
-            <div class="io-arrow">
-                ↓
-            </div>
-
-
-            <div class="io-box">
-
-                <span>
-                    STAGE 04
-                </span>
-
-                <h3>
-                    QUALITY
-                    <br>
-                    MONITORING
-                </h3>
-
-            </div>
-
-
-            <div class="io-arrow">
-                ↓
-            </div>
-
-
-            <div class="io-box output-box">
-
-                <span>
-                    OUTPUT
-                </span>
-
-                <h3>
-                    TREATED
-                    <br>
-                    WATER
-                </h3>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         WHY KALASARA
-         ===================================================== -->
-
-    <section class="why">
-
-        <div class="section-title">
-
-            <p>
-                DESIGN PRINCIPLES
-            </p>
-
-
-            <h2>
-
-                Built around
-
-                <span>
-                    practical engineering.
-                </span>
-
-            </h2>
-
-        </div>
-
-
-        <div class="why-grid">
-
-
-            <div class="why-card">
-
-                <div class="why-icon">
-                    01
                 </div>
 
-                <h3>
-                    MODULAR
-                </h3>
-
                 <p>
-
-                    Treatment stages can be configured
+                    The modular architecture can be adapted
                     according to the water-quality challenge
-                    being addressed.
-
+                    and deployment environment.
                 </p>
 
             </div>
 
 
-            <div class="why-card">
+            <div class="portal-application-grid">
 
-                <div class="why-icon">
-                    02
+
+                <div class="portal-application-card mining">
+
+                    <span>
+                        APPLICATION 01
+                    </span>
+
+                    <h3>
+                        Mining-Affected Areas
+                    </h3>
+
+                    <p>
+                        Treatment architecture intended for
+                        water affected by mining-related
+                        contamination.
+                    </p>
+
+                    <a href="how-it-works.html">
+                        EXPLORE →
+                    </a>
+
                 </div>
 
-                <h3>
-                    MONITORED
-                </h3>
-
-                <p>
-
-                    Sensor integration enables digital
-                    observation of important water-quality
-                    parameters.
-
-                </p>
-
-            </div>
 
 
-            <div class="why-card">
+                <div class="portal-application-card rural">
 
-                <div class="why-icon">
-                    03
+                    <span>
+                        APPLICATION 02
+                    </span>
+
+                    <h3>
+                        Rural Locations
+                    </h3>
+
+                    <p>
+                        Compact treatment and monitoring
+                        designed around locations with
+                        limited infrastructure.
+                    </p>
+
+                    <a href="prototype.html">
+                        EXPLORE →
+                    </a>
+
                 </div>
 
-                <h3>
-                    COMPACT
-                </h3>
-
-                <p>
-
-                    The treatment architecture is designed
-                    around a compact and deployable system.
-
-                </p>
-
-            </div>
 
 
-            <div class="why-card">
+                <div class="portal-application-card monitoring-card">
 
-                <div class="why-icon">
-                    04
+                    <span>
+                        APPLICATION 03
+                    </span>
+
+                    <h3>
+                        Water Quality Monitoring
+                    </h3>
+
+                    <p>
+                        Digital monitoring provides measurable
+                        water-quality information during operation.
+                    </p>
+
+                    <a href="dashboard.html">
+                        EXPLORE →
+                    </a>
+
                 </div>
 
-                <h3>
-                    ADAPTABLE
-                </h3>
-
-                <p>
-
-                    The modular architecture allows the
-                    treatment configuration to evolve with
-                    experimental results.
-
-                </p>
-
             </div>
 
-
-        </div>
-
-    </section>
+        </section>
 
 
 
-    <!-- =====================================================
-         EXPERIMENTAL VALIDATION
-         ===================================================== -->
+        <!-- =================================================
+             RESEARCH
+             ================================================= -->
 
-    <section class="section performance">
+        <section class="portal-research">
 
-        <div class="section-title">
+            <div class="portal-research-content">
 
-            <p>
-                EXPERIMENTAL VALIDATION
-            </p>
-
-
-            <h2>
-
-                Measure what
-
-                <span>
-                    matters.
+                <span class="portal-section-label">
+                    RESEARCH & DEVELOPMENT
                 </span>
 
-            </h2>
+                <h2>
+                    Engineering the next generation
+                    of water treatment.
+                </h2>
+
+                <p>
+                    KALASARA is being developed through iterative
+                    experimentation involving filtration, membrane
+                    materials, bio-treatment, sensor integration
+                    and system optimization.
+                </p>
 
 
-            <p class="section-description">
+                <div class="portal-research-grid">
 
-                Experimental measurements will be used to
-                compare incoming and treated water and
-                evaluate system performance.
+                    <div>
+                        ✓ Water Quality Analysis
+                    </div>
 
-            </p>
+                    <div>
+                        ✓ Membrane Development
+                    </div>
 
-        </div>
+                    <div>
+                        ✓ Bio-Treatment Studies
+                    </div>
+
+                    <div>
+                        ✓ Sensor Integration
+                    </div>
+
+                    <div>
+                        ✓ Flow Optimization
+                    </div>
+
+                    <div>
+                        ✓ Performance Testing
+                    </div>
+
+                </div>
 
 
-        <div class="comparison-table">
+                <a
+                    href="research.html"
+                    class="portal-primary-button">
 
-            <div class="table-header">
-                PARAMETER
+                    VIEW RESEARCH
+                    →
+
+                </a>
+
             </div>
 
-            <div class="table-header">
-                BEFORE
-            </div>
+        </section>
 
-            <div class="table-header">
-                AFTER
-            </div>
 
+
+        <!-- =================================================
+             PROJECT INFORMATION
+             ================================================= -->
+
+        <section class="portal-info-strip">
 
             <div>
-                pH
-            </div>
-
-            <div>
-                —
-            </div>
-
-            <div>
-                —
-            </div>
-
-
-            <div>
-                TDS
-            </div>
-
-            <div>
-                —
-            </div>
-
-            <div>
-                —
-            </div>
-
-
-            <div>
-                TSS
-            </div>
-
-            <div>
-                —
-            </div>
-
-            <div>
-                —
-            </div>
-
-
-            <div>
-                Turbidity
-            </div>
-
-            <div>
-                —
-            </div>
-
-            <div>
-                —
-            </div>
-
-
-            <div>
-                Temperature
-            </div>
-
-            <div>
-                —
-            </div>
-
-            <div>
-                —
-            </div>
-
-        </div>
-
-
-        <p class="data-note">
-
-            *Experimental values will be updated after
-            laboratory and prototype testing.
-
-        </p>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         IMPACT / APPLICATIONS
-         ===================================================== -->
-
-    <section class="impact">
-
-        <div class="section-title">
-
-            <p>
-                POTENTIAL APPLICATIONS
-            </p>
-
-
-            <h2>
-
-                Designed for
 
                 <span>
-                    challenging environments.
+                    PROJECT
                 </span>
 
-            </h2>
-
-        </div>
-
-
-        <div class="impact-grid">
-
-
-            <div class="impact-card">
-
-                <h3>
-                    MINING AREAS
-                </h3>
-
-                <p>
-
-                    A treatment architecture for water
-                    affected by mining-related contamination.
-
-                </p>
+                <strong>
+                    KALASARA
+                </strong>
 
             </div>
 
 
-            <div class="impact-card">
+            <div>
 
-                <h3>
-                    REMOTE LOCATIONS
-                </h3>
+                <span>
+                    DOMAIN
+                </span>
 
-                <p>
-
-                    Compact treatment and monitoring can
-                    support locations with limited
-                    infrastructure.
-
-                </p>
+                <strong>
+                    SMART WATER
+                </strong>
 
             </div>
 
 
-            <div class="impact-card">
+            <div>
 
-                <h3>
-                    WATER QUALITY
-                </h3>
+                <span>
+                    FOCUS
+                </span>
 
-                <p>
-
-                    Digital monitoring provides measurable
-                    water-quality information during system
-                    operation.
-
-                </p>
+                <strong>
+                    PURIFICATION + MONITORING
+                </strong>
 
             </div>
 
 
-        </div>
+            <div>
 
-    </section>
+                <span>
+                    STATUS
+                </span>
+
+                <strong class="status-development">
+                    PROTOTYPE / R&D
+                </strong>
+
+            </div>
+
+        </section>
 
 
 
-    <!-- =====================================================
-         RESEARCH
-         ===================================================== -->
+        <!-- =================================================
+             CALL TO ACTION
+             ================================================= -->
 
-    <section class="section research">
+        <section class="portal-cta">
 
-        <div class="research-content">
-
-            <p class="tagline">
-                RESEARCH & DEVELOPMENT
-            </p>
-
+            <span class="portal-section-label">
+                EXPLORE KALASARA
+            </span>
 
             <h2>
-                Engineering the next
-                generation of water treatment.
+                Technology for cleaner,
+                smarter water treatment.
             </h2>
 
-
             <p>
-
-                KALASARA is being developed through iterative
-                experimentation involving filtration,
-                membrane materials, bio-coagulation,
-                sensor integration and system optimization.
-
+                Explore the prototype, technology,
+                purification process and monitoring system.
             </p>
 
 
-            <div class="research-list">
+            <div class="portal-cta-buttons">
 
-                <div>
-                    ✓ Water Quality Analysis
-                </div>
+                <a
+                    href="prototype.html"
+                    class="portal-primary-button">
 
-                <div>
-                    ✓ Membrane Development
-                </div>
+                    VIEW PROTOTYPE
+                    →
 
-                <div>
-                    ✓ Bio-Coagulation Studies
-                </div>
+                </a>
 
-                <div>
-                    ✓ Sensor Integration
-                </div>
 
-                <div>
-                    ✓ Flow Optimization
-                </div>
+                <a
+                    href="contact.html"
+                    class="portal-secondary-button">
 
-                <div>
-                    ✓ Performance Testing
-                </div>
+                    CONTACT KALASARA
+                    →
+
+                </a>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
-
-
-
-    <!-- =====================================================
-         CTA
-         ===================================================== -->
-
-    <section class="cta">
-
-        <p class="tagline">
-            EXPLORE THE SYSTEM
-        </p>
-
-
-        <h2>
-            Discover how KALASARA works.
-        </h2>
-
-
-        <p>
-
-            Explore the technology, prototype,
-            purification workflow and monitoring system.
-
-        </p>
-
-
-        <div class="hero-buttons">
-
-            <a
-                href="how-it-works.html"
-                class="primary-btn"
-            >
-                HOW IT WORKS
-            </a>
-
-
-            <a
-                href="prototype.html"
-                class="secondary-btn"
-            >
-                VIEW PROTOTYPE
-            </a>
-
-
-            <a
-                href="dashboard.html"
-                class="secondary-btn"
-            >
-                DASHBOARD
-            </a>
-
-        </div>
-
-    </section>
+    </main>
 
 
 
@@ -1361,50 +1346,111 @@
          FOOTER
          ===================================================== -->
 
-    <footer>
+    <footer class="portal-footer">
 
-        <div class="footer-logo">
-            KALASARA
+        <div class="portal-footer-main">
+
+
+            <div class="portal-footer-brand">
+
+                <img
+                    src="images/jharkhand-logo.jpeg"
+                    alt="Government of Jharkhand">
+
+                <div>
+
+                    <strong>
+                        KALASARA
+                    </strong>
+
+                    <p>
+                        Smart Water Purification &
+                        Quality Monitoring System
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="portal-footer-column">
+
+                <h3>
+                    QUICK LINKS
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="how-it-works.html">
+                    How It Works
+                </a>
+
+                <a href="technology.html">
+                    Technology
+                </a>
+
+                <a href="prototype.html">
+                    Prototype
+                </a>
+
+            </div>
+
+
+            <div class="portal-footer-column">
+
+                <h3>
+                    SYSTEM
+                </h3>
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="research.html">
+                    Research
+                </a>
+
+                <a href="team.html">
+                    Team
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="portal-footer-column">
+
+                <h3>
+                    KALASARA
+                </h3>
+
+                <p>
+                    Smart water purification and
+                    quality monitoring for
+                    challenging environments.
+                </p>
+
+            </div>
+
         </div>
 
 
-        <p>
-            Smart Water Purification for Challenging Environments
-        </p>
+        <div class="portal-footer-bottom">
 
+            <span>
+                © 2026 KALASARA
+            </span>
 
-        <div class="footer-links">
-
-            <a href="index.html">
-                Home
-            </a>
-
-            <a href="how-it-works.html">
-                How It Works
-            </a>
-
-            <a href="technology.html">
-                Technology
-            </a>
-
-            <a href="prototype.html">
-                Prototype
-            </a>
-
-            <a href="dashboard.html">
-                Dashboard
-            </a>
-
-            <a href="team.html">
-                Team
-            </a>
+            <span>
+                Smart Water Purification & Quality Monitoring
+            </span>
 
         </div>
-
-
-        <p class="copyright">
-            © 2026 KALASARA
-        </p>
 
     </footer>
 
@@ -1417,8 +1463,7 @@
     <a
         href="contact.html"
         class="floating-order-btn"
-        aria-label="Order Your Kalasara Now"
-    >
+        aria-label="Order Your Kalasara Now">
 
         <span class="floating-cart">
             🛒
@@ -1434,11 +1479,59 @@
 
 
     <!-- =====================================================
-         MAIN JAVASCRIPT
+         JAVASCRIPT
          ===================================================== -->
 
-    <script src="js/main.js"></script>
+    <script>
 
+        function togglePortalMenu() {
+
+            const menu =
+                document.getElementById("portalMobileMenu");
+
+            menu.classList.toggle("open");
+
+        }
+
+
+        document
+            .querySelectorAll(".portal-mobile-menu a")
+            .forEach(function(link) {
+
+                link.addEventListener("click", function() {
+
+                    document
+                        .getElementById("portalMobileMenu")
+                        .classList.remove("open");
+
+                });
+
+            });
+
+
+        /* Add shadow to navigation after scrolling */
+
+        window.addEventListener("scroll", function() {
+
+            const nav =
+                document.querySelector(".portal-navigation");
+
+            if (window.scrollY > 30) {
+
+                nav.classList.add("scrolled");
+
+            } else {
+
+                nav.classList.remove("scrolled");
+
+            }
+
+        });
+
+    </script>
+
+
+    <script src="js/main.js"></script>
 
 </body>
 

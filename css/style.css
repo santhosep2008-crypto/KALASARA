@@ -3418,3 +3418,184 @@ footer,
     }
 
 }
+/* =========================================================
+   KALASARA - GLOBAL ANIMATED BACKGROUND
+   Applies to ALL pages
+   ========================================================= */
+
+/* Make the main page transparent */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background: transparent !important;
+}
+
+/* ---------------------------------------------------------
+   FULL-SCREEN VIDEO
+   --------------------------------------------------------- */
+
+.site-background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    object-fit: cover;
+
+    z-index: 0;
+
+    pointer-events: none;
+}
+
+/* ---------------------------------------------------------
+   DARK OVERLAY
+   Makes text easier to read
+   --------------------------------------------------------- */
+
+.site-background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(5, 45, 39, 0.48);
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+/* ---------------------------------------------------------
+   KEEP ALL WEBSITE CONTENT ABOVE VIDEO
+   --------------------------------------------------------- */
+
+body > *:not(.site-background-video):not(.site-background-overlay) {
+    position: relative;
+    z-index: 2;
+}
+
+/* ---------------------------------------------------------
+   REMOVE SOLID WHITE BACKGROUNDS
+   --------------------------------------------------------- */
+
+main,
+section,
+header,
+footer,
+.hero,
+.page,
+.page-section,
+.content-section,
+.container,
+.technology-page,
+.contact-page,
+.dashboard-page,
+.team-page,
+.how-page,
+.prototype-page,
+.research-page {
+    background-color: transparent !important;
+}
+
+/* ---------------------------------------------------------
+   NAVBAR
+   --------------------------------------------------------- */
+
+.navbar {
+    background: rgba(5, 45, 39, 0.72) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* ---------------------------------------------------------
+   COMMON CONTENT AREAS
+   Slight transparency so animation remains visible
+   --------------------------------------------------------- */
+
+.card,
+.tech-card,
+.technology-card,
+.component,
+.contact-info,
+.order-card,
+.cad-wrapper,
+.parameter-card,
+.quality-card,
+.benefit-card,
+.info-card,
+.team-card,
+.research-card,
+.stat-card {
+    background: rgba(255, 255, 255, 0.76) !important;
+
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+/* ---------------------------------------------------------
+   SECTIONS THAT WERE PREVIOUSLY WHITE / CREAM
+   --------------------------------------------------------- */
+
+.need-section,
+.detail-section,
+.process-preview,
+.tech-section,
+.components-section,
+.flow-section,
+.contact-section,
+.benefits-section,
+.research-section,
+.team-section,
+.dashboard-section,
+.prototype-section {
+    background: rgba(245, 240, 223, 0.72) !important;
+
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+/* ---------------------------------------------------------
+   FOOTER
+   --------------------------------------------------------- */
+
+footer {
+    background: rgba(4, 38, 33, 0.88) !important;
+}
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .site-background-overlay {
+        background: rgba(5, 45, 39, 0.58);
+    }
+
+    .navbar {
+        background: rgba(5, 45, 39, 0.88) !important;
+    }
+
+    .card,
+    .tech-card,
+    .technology-card,
+    .component,
+    .contact-info,
+    .order-card,
+    .cad-wrapper,
+    .parameter-card,
+    .quality-card,
+    .benefit-card,
+    .info-card,
+    .team-card,
+    .research-card,
+    .stat-card {
+        background: rgba(255, 255, 255, 0.82) !important;
+    }
+}

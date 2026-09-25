@@ -6617,3 +6617,17 @@ footer {
     position: relative;
     z-index: 2;
 }
+.portal-footer {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    position: relative !important;
+    overflow: hidden !important;
+    color: #ffffff !important;
+}
+
+.portal-footer-main,
+.portal-footer-bottom {
+    position: relative;
+    z-index: 2;
+}

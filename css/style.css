@@ -6789,3 +6789,28 @@ footer {
     }
 
 }
+/* =====================================================
+   FORCE KALASARA AT A GLANCE BACKGROUND
+   ===================================================== */
+
+.portal-glance {
+    position: relative !important;
+    width: 100% !important;
+    min-height: 600px !important;
+
+    padding: 100px 6% !important;
+    box-sizing: border-box !important;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 20, 15, 0.45),
+            rgba(0, 20, 15, 0.65)
+        ),
+        url("../images/at-a-glance-bg.jpg") !important;
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
+    overflow: hidden !important;
+}

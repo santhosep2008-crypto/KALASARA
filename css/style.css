@@ -6677,3 +6677,43 @@ section.portal-glance .portal-glance-grid {
     }
 
 }
+.prototype-showcase {
+    padding: 70px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.prototype-video-card {
+    width: min(1100px, 100%);
+    background: #061f1c;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+.prototype-video-header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.video-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #35d07f;
+}
+
+.prototype-video-card video {
+    width: 100%;
+    display: block;
+    max-height: 650px;
+    object-fit: contain;
+    background: #000;
+}

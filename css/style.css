@@ -4829,82 +4829,30 @@ footer {
    ========================================================= */
 
 .portal-glance {
-    padding: 90px 0;
+    position: relative !important;
 
-    background: rgba(236,242,233,0.88);
-}
+    width: 100% !important;
 
-.portal-glance-grid {
-    max-width: 1150px;
+    min-height: 600px !important;
 
-    margin: auto;
+    padding: 100px 6% !important;
 
-    padding: 0 5%;
+    box-sizing: border-box !important;
 
-    display: grid;
+    background-image:
+        linear-gradient(
+            rgba(0, 25, 21, 0.50),
+            rgba(0, 25, 21, 0.68)
+        ),
+        url("../images/at-a-glance-bg.jpg") !important;
 
-    grid-template-columns: repeat(4,1fr);
+    background-size: cover !important;
 
-    gap: 15px;
-}
+    background-position: center !important;
 
-.portal-glance-card {
-    padding: 30px 24px;
+    background-repeat: no-repeat !important;
 
-    text-align: center;
-
-    background: rgba(255,255,255,0.62);
-
-    border: 1px solid #d4ded5;
-
-    border-radius: 5px;
-
-    transition: 0.3s;
-}
-
-.portal-glance-card:hover {
-    transform: translateY(-5px);
-
-    background: rgba(255,255,255,0.86);
-}
-
-.glance-icon {
-    width: 60px;
-    height: 60px;
-
-    margin: 0 auto 17px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-
-    background: #dcebe1;
-
-    color: #13765f;
-
-    font-size: 25px;
-}
-
-.portal-glance-card strong {
-    display: block;
-
-    color: #164238;
-
-    font-size: 12px;
-
-    letter-spacing: 1px;
-}
-
-.portal-glance-card p {
-    margin: 10px 0 0;
-
-    color: #64766e;
-
-    font-size: 12px;
-
-    line-height: 1.6;
+    overflow: hidden !important;
 }
 
 

@@ -5621,11 +5621,22 @@ footer {
 .portal-footer {
     position: relative;
 
-    background: rgba(2,16,13,0.97);
+    background-image:
+        linear-gradient(
+            rgba(0, 35, 30, 0.72),
+            rgba(0, 35, 30, 0.88)
+        ),
+        url("../images/footer-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     color: #ffffff;
 
     border-top: 3px solid #2d7564;
+
+    overflow: hidden;
 }
 
 .portal-footer-main {

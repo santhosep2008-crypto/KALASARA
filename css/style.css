@@ -6585,19 +6585,29 @@ footer {
 
 .portal-glance {
     position: relative !important;
-    width: 100%;
+    width: 100% !important;
+    min-height: 600px !important;
+    padding: 100px 6% !important;
+    box-sizing: border-box !important;
 
-    min-height: 600px;
-
-    padding: 100px 6%;
-
-    box-sizing: border-box;
+    background-image:
+        linear-gradient(
+            rgba(0, 25, 21, 0.50),
+            rgba(0, 25, 21, 0.68)
+        ),
+        url("../images/at-a-glance-bg.jpg") !important;
 
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
 
-    overflow: hidden;
+    overflow: hidden !important;
+}
+
+/* CONTENT */
+
+.portal-glance-inner {
+    ...
 }
 
 

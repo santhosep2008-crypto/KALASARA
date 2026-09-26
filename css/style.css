@@ -6814,3 +6814,22 @@ footer {
 
     overflow: hidden !important;
 }
+/* FORCE AT A GLANCE BACKGROUND */
+.portal-glance {
+    background: url("../images/at-a-glance-bg.jpg") center center / cover no-repeat !important;
+    min-height: 600px !important;
+    position: relative !important;
+}
+
+.portal-glance::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 30, 25, 0.45);
+    z-index: 0;
+}
+
+.portal-glance-inner {
+    position: relative !important;
+    z-index: 2 !important;
+}

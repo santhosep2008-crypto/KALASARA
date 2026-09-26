@@ -6552,45 +6552,7 @@ footer {
 }
 /* =====================================================
    KALASARA FOOTER BACKGROUND IMAGE
-   ===================================================== */
-
-.site-footer {
-    position: relative;
-
-    background-image:
-        linear-gradient(
-            rgba(0, 35, 30, 0.88),
-            rgba(0, 35, 30, 0.92)
-        ),
-        url("../images/footer-bg.jpg");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    color: white;
-    overflow: hidden;
-}
-
-.site-footer > * {
-    position: relative;
-    z-index: 2;
-}
-.portal-footer {
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    position: relative !important;
-    overflow: hidden !important;
-    color: #ffffff !important;
-}
-
-.portal-footer-main,
-.portal-footer-bottom {
-    position: relative;
-    z-index: 2;
-}
-
+   ============================================
 
 
 }

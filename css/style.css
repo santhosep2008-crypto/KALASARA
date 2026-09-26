@@ -6856,3 +6856,56 @@ footer {
     box-shadow:
         0 20px 50px rgba(0,0,0,0.20);
 }
+/* =====================================================
+   KALASARA AT A GLANCE - NORMAL IMAGE
+   ===================================================== */
+
+.portal-glance {
+    position: relative;
+    width: 100%;
+    padding: 100px 5%;
+    box-sizing: border-box;
+    background: #eef3ee;
+}
+
+/* IMAGE */
+
+.portal-glance-image {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.portal-glance-image img {
+    width: 100%;
+    height: auto;
+    max-height: 520px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.18);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .portal-glance {
+        padding: 70px 5%;
+    }
+
+    .portal-glance-image {
+        margin-bottom: 40px;
+    }
+
+    .portal-glance-image img {
+        max-height: 350px;
+    }
+
+}

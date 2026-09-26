@@ -6833,3 +6833,26 @@ footer {
     position: relative !important;
     z-index: 2 !important;
 }
+/* =====================================================
+   AT A GLANCE - IMAGE
+   ===================================================== */
+
+.portal-glance-image {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.portal-glance-image img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.20);
+}

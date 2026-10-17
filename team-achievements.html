@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142858">
+  <title>Team & Achievements | KALASARA</title>
+  <meta name="description" content="Meet the KALASARA team and explore our hackathon and innovation milestones.">
+  <style>
+    :root {
+      --navy: #142858;
+      --navy-2: #1d376f;
+      --navy-3: #263f78;
+      --orange: #f39a32;
+      --cream: #f5f7fc;
+      --white: #ffffff;
+      --muted: #b8c5df;
+      --ink: #152447;
+      --line: rgba(255,255,255,.13);
+      --shadow: 0 18px 45px rgba(5, 15, 42, .22);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--navy); color: var(--white); line-height: 1.6;
+    }
+    a { color: inherit; }
+    .site-header {
+      position: sticky; top: 0; z-index: 20; background: rgba(20,40,88,.94);
+      border-bottom: 1px solid var(--line); backdrop-filter: blur(14px);
+    }
+    .nav {
+      max-width: 1180px; margin: auto; padding: 15px 22px; display: flex;
+      align-items: center; justify-content: space-between; gap: 20px;
+    }
+    .brand { display: flex; align-items: center; gap: 11px; text-decoration: none; font-weight: 850; letter-spacing: .08em; }
+    .brand-mark { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 12px; background: var(--orange); color: var(--navy); font-weight: 950; }
+    .nav-links { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; }
+    .nav-links a { color: #e6ebf7; text-decoration: none; font-size: .92rem; }
+    .nav-links a:hover { color: var(--orange); }
+    .nav-cta { background: var(--orange); color: var(--navy) !important; padding: 9px 14px; border-radius: 999px; font-weight: 800; }
+    .hero { overflow: hidden; position: relative; padding: 78px 22px 66px; background: radial-gradient(circle at 85% 15%, rgba(243,154,50,.18), transparent 27%), linear-gradient(135deg, #142858 0%, #1c3670 100%); }
+    .hero:after { content: ""; position: absolute; width: 360px; height: 360px; border: 1px solid rgba(243,154,50,.2); border-radius: 50%; right: -140px; bottom: -240px; box-shadow: 0 0 0 35px rgba(243,154,50,.035), 0 0 0 70px rgba(243,154,50,.025); }
+    .hero-inner, .section-inner { max-width: 1180px; margin: auto; position: relative; z-index: 1; }
+    .eyebrow { color: var(--orange); text-transform: uppercase; letter-spacing: .16em; font-weight: 850; font-size: .78rem; }
+    h1 { margin: 12px 0 15px; font-size: clamp(2.5rem, 6vw, 4.8rem); line-height: 1.04; letter-spacing: -.045em; max-width: 780px; }
+    .hero p { max-width: 690px; color: #d5def1; font-size: clamp(1rem, 2vw, 1.16rem); margin: 0; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 27px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 18px; border-radius: 999px; font-weight: 800; text-decoration: none; border: 1px solid transparent; }
+    .btn-primary { background: var(--orange); color: var(--navy); }
+    .btn-secondary { border-color: rgba(255,255,255,.28); color: white; }
+    .section { padding: 68px 22px; }
+    .section-light { background: var(--cream); color: var(--ink); }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 27px; }
+    .section-head h2 { margin: 5px 0 0; font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.15; letter-spacing: -.03em; }
+    .section-head p { max-width: 520px; margin: 0; color: #64718c; }
+    .team-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 16px; }
+    .team-card { background: #1b3267; border: 1px solid rgba(255,255,255,.1); border-radius: 18px; padding: 22px; min-height: 176px; box-shadow: var(--shadow); }
+    .team-card .initial { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 14px; background: rgba(243,154,50,.15); color: var(--orange); font-weight: 900; margin-bottom: 17px; border: 1px solid rgba(243,154,50,.28); }
+    .team-card h3 { margin: 0 0 4px; font-size: 1.04rem; }
+    .team-card p { margin: 0; color: var(--muted); font-size: .9rem; }
+    .mentor { margin-top: 18px; padding: 18px 21px; border-radius: 16px; background: rgba(243,154,50,.09); border: 1px solid rgba(243,154,50,.26); display: flex; align-items: center; gap: 14px; }
+    .mentor .star { font-size: 1.5rem; }
+    .mentor strong { display: block; }
+    .mentor span { color: var(--muted); font-size: .9rem; }
+    .team-image-wrap { margin-top: 24px; display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 22px; align-items: center; }
+    .team-image-wrap img { width: 100%; max-height: 360px; object-fit: contain; background: #e9edf7; border-radius: 18px; }
+    .team-note { padding: 10px 4px; }
+    .team-note h3 { font-size: 1.5rem; margin: 0 0 9px; }
+    .team-note p { color: #d1dbef; margin: 0; }
+    .achievement-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 22px; }
+    .achievement-card { overflow: hidden; border-radius: 20px; background: white; border: 1px solid #e1e7f1; box-shadow: 0 14px 32px rgba(22,38,73,.08); display: flex; flex-direction: column; }
+    .achievement-image { display: block; width: 100%; height: 310px; object-fit: contain; background: #edf0f7; cursor: zoom-in; }
+    .achievement-content { padding: 22px 23px 24px; }
+    .tag { display: inline-flex; align-items: center; border-radius: 999px; padding: 5px 10px; font-size: .73rem; font-weight: 850; color: #8a4b00; background: #fff0d9; text-transform: uppercase; letter-spacing: .06em; }
+    .achievement-content h3 { margin: 12px 0 7px; font-size: 1.25rem; line-height: 1.25; color: #17274d; }
+    .achievement-content p { margin: 0; color: #5f6b82; font-size: .95rem; }
+    .achievement-content .meta { margin-top: 12px; color: #283d69; font-size: .85rem; font-weight: 750; }
+    .callout { margin-top: 26px; border-radius: 18px; padding: 22px 24px; background: #1b3267; color: white; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .callout h3 { margin: 0 0 5px; }
+    .callout p { margin: 0; color: #d0daee; }
+    .footer { padding: 25px 22px; background: #0e1d43; color: #bdc9e1; }
+    .footer-inner { max-width: 1180px; margin: auto; display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; font-size: .88rem; }
+    .footer strong { color: white; }
+    .lightbox { display: none; position: fixed; inset: 0; z-index: 50; background: rgba(4,10,26,.92); padding: 24px; align-items: center; justify-content: center; }
+    .lightbox.open { display: flex; }
+    .lightbox img { max-width: min(1100px, 95vw); max-height: 88vh; object-fit: contain; border-radius: 10px; }
+    .lightbox-close { position: absolute; top: 18px; right: 22px; color: white; background: transparent; border: 1px solid rgba(255,255,255,.45); border-radius: 50%; width: 42px; height: 42px; font-size: 1.5rem; cursor: pointer; }
+    @media (max-width: 850px) {
+      .team-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .team-image-wrap { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+    }
+    @media (max-width: 600px) {
+      .nav { padding: 12px 16px; align-items: flex-start; flex-direction: column; gap: 10px; }
+      .nav-links { gap: 14px; font-size: .85rem; }
+      .hero { padding: 57px 18px 50px; }
+      .section { padding: 50px 17px; }
+      .team-grid, .achievement-grid { grid-template-columns: 1fr; }
+      .achievement-image { height: auto; max-height: 470px; min-height: 220px; }
+      .callout { align-items: flex-start; flex-direction: column; }
+      .team-card { min-height: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="KALASARA home"><span class="brand-mark">K</span><span>KALASARA</span></a>
+      <div class="nav-links">
+        <a href="#team">Our Team</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#innovation">Innovation</a>
+        <a class="nav-cta" href="index.html">Main Website ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="eyebrow">People • Progress • Purpose</div>
+        <h1>Meet the team.<br><span style="color:var(--orange)">Celebrate the journey.</span></h1>
+        <p>Behind KALASARA is a collaborative student team driven by engineering, practical problem-solving and a commitment to developing solutions for real-world challenges.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#team">Meet the team</a>
+          <a class="btn btn-secondary" href="#achievements">Explore achievements</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="team">
+      <div class="section-inner">
+        <div class="section-head">
+          <div><div class="eyebrow">The people behind the work</div><h2>Team KALASARA</h2></div>
+          <p>A multidisciplinary team combining process design, hardware development and software skills.</p>
+        </div>
+        <div class="team-grid">
+          <article class="team-card"><div class="initial">LC</div><h3>Lakshmitha C</h3><p>Team Lead · Chemical Engineering</p></article>
+          <article class="team-card"><div class="initial">KD</div><h3>Kalaiyarasan D</h3><p>Hardware Developer · Chemical Engineering</p></article>
+          <article class="team-card"><div class="initial">SR</div><h3>Sreemayee R</h3><p>Process Design · Chemical Engineering</p></article>
+          <article class="team-card"><div class="initial">SR</div><h3>Santhosh R</h3><p>Software Developer · Engineering</p></article>
+        </div>
+        <div class="mentor">
+          <div class="star" aria-hidden="true">✦</div>
+          <div><strong>Mentor: Dr. S. Vinod Kumar</strong><span>Guidance and support for the team's innovation journey</span></div>
+        </div>
+        <div class="team-image-wrap">
+          <img src="assets/team-support-slide.jpeg" alt="KALASARA team and support-required presentation slide" loading="lazy">
+          <div class="team-note">
+            <div class="eyebrow">One team, shared purpose</div>
+            <h3>Engineering ideas into practical solutions.</h3>
+            <p>Our work brings together team leadership, hardware development, process design and software development. We value mentorship, field-relevant testing and collaboration with partners who can help move promising ideas toward real-world pilots.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="achievements">
+      <div class="section-inner">
+        <div class="section-head">
+          <div><div class="eyebrow">Milestones & recognition</div><h2>Our achievements</h2></div>
+          <p>Snapshots of our hackathon experience, teamwork, prototype-building and continued participation in innovation challenges.</p>
+        </div>
+        <div class="achievement-grid">
+          <article class="achievement-card">
+            <img class="achievement-image" src="assets/achievement-hacktronix-mentor.jpeg" alt="Mentor post celebrating the team's second-prize achievement at HackTronix 2.0" loading="lazy" data-lightbox>
+            <div class="achievement-content"><span class="tag">National-level hackathon</span><h3>Second Prize — HackTronix 2.0</h3><p>The team was recognised as runner-up at the 24-hour national-level HackTronix 2.0 hackathon hosted by St. Joseph’s College of Engineering.</p><div class="meta">Prize amount shown in the event poster: ₹12,000</div></div>
+          </article>
+          <article class="achievement-card">
+            <img class="achievement-image" src="assets/achievement-hacktronix-runner-up.jpeg" alt="Team photograph and runner-up poster for HackTronix 2.0" loading="lazy" data-lightbox>
+            <div class="achievement-content"><span class="tag">Team recognition</span><h3>A proud runner-up finish</h3><p>A memorable milestone for Lakshmitha C, Kalaiyarasan D, Sreemayee R and Santhosh R, reflecting 24 hours of collaboration, brainstorming and engineering effort.</p><div class="meta">HackTronix 2.0 · St. Joseph’s College of Engineering</div></div>
+          </article>
+          <article class="achievement-card">
+            <img class="achievement-image" src="assets/achievement-prototype-team.jpeg" alt="Team working on a physical prototype and group photograph from the hackathon" loading="lazy" data-lightbox>
+            <div class="achievement-content"><span class="tag">Hands-on engineering</span><h3>From ideas to prototypes</h3><p>Building and testing physical concepts as a team—learning through iteration, practical problem-solving and collaborative design.</p><div class="meta">Prototype development and team collaboration</div></div>
+          </article>
+          <article class="achievement-card">
+            <img class="achievement-image" src="assets/achievement-ideas-to-impact.jpeg" alt="Ideas to Impact Challenge 3.0 entry by SPARTANS proposing automated microplastics detection and removal" loading="lazy" data-lightbox>
+            <div class="achievement-content"><span class="tag">Sustainability innovation</span><h3>Ideas to Impact Challenge 3.0</h3><p>SPARTANS submitted a concept for an automated system to detect and remove microplastics from contaminated water, connecting engineering innovation with environmental sustainability.</p><div class="meta">Entry ID shown: SPARTANS — I2I2026W0117</div></div>
+          </article>
+        </div>
+        <div class="callout" id="innovation">
+          <div><h3>Our journey continues.</h3><p>We keep learning, building and refining ideas through teamwork and practical experimentation.</p></div>
+          <a class="btn btn-primary" href="index.html">Explore KALASARA ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner"><span><strong>KALASARA</strong> · Team & Achievements</span><span>Built for learning, collaboration and impact.</span></div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Expanded achievement image">
+    <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+    <img src="" alt="">
+  </div>
+  <script>
+    (() => {
+      const modal = document.getElementById('lightbox');
+      const modalImg = modal.querySelector('img');
+      const closeButton = modal.querySelector('.lightbox-close');
+      document.querySelectorAll('[data-lightbox]').forEach((img) => {
+        img.addEventListener('click', () => {
+          modalImg.src = img.src;
+          modalImg.alt = img.alt;
+          modal.classList.add('open');
+          closeButton.focus();
+        });
+      });
+      const close = () => {
+        modal.classList.remove('open');
+        modalImg.src = '';
+      };
+      closeButton.addEventListener('click', close);
+      modal.addEventListener('click', (event) => { if (event.target === modal) close(); });
+      document.addEventListener('keydown', (event) => { if (event.key === 'Escape') close(); });
+    })();
+  </script>
+</body>
+</html>
